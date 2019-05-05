@@ -5,7 +5,7 @@ description: 「计划回复」是一项功能，允许给您的用户通过不�
 # 计划回复
 
 {% hint style="warning" %}
-请注意，相同的计划用户只能收到一次。如果希望用户可以从头再次收到该计划中的消息，您需要先给用户添加[取消订阅序列](../../untitled-1/zu-cheng-jie-gou.md#ding-yue-xu-lie-he-qu-xiao-ding-yue-xu-lie)动作，然后再次添加[订阅序列](../../untitled-1/zu-cheng-jie-gou.md#ding-yue-xu-lie-he-qu-xiao-ding-yue-xu-lie)动作。 
+请注意，相同的计划用户只能收到一次。如果希望用户可以从头再次收到该计划中的消息，您需要先给用户添加[取消订阅序列](../../basic-knowledge/zu-cheng-jie-gou.md#ding-yue-xu-lie-he-qu-xiao-ding-yue-xu-lie)动作，然后再次添加[订阅序列](../../basic-knowledge/zu-cheng-jie-gou.md#ding-yue-xu-lie-he-qu-xiao-ding-yue-xu-lie)动作。 
 {% endhint %}
 
 图片

@@ -6,9 +6,9 @@
 
 {% page-ref page="creating-bots/" %}
 
-{% page-ref page="untitled-1/" %}
+{% page-ref page="basic-knowledge/" %}
 
 {% page-ref page="untitled/" %}
 
-{% page-ref page="gao-ji-gong-neng/" %}
+{% page-ref page="advanced-functions/" %}
 

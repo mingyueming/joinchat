@@ -62,7 +62,7 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 ### 查询订单
 
-该功能为电商高级工具，为用户提供便捷的途径进行订单查询。使用该功能前需确保您已经完成店铺绑定，具体使用说明可见[顾客查询订单&包裹](../gao-ji-gong-neng/gu-ke-cha-xun.md#gu-ke-cha-xun-ding-dan-bao-guo-zhuang-tai)。
+该功能为电商高级工具，为用户提供便捷的途径进行订单查询。使用该功能前需确保您已经完成店铺绑定，具体使用说明可见[顾客查询订单&包裹](../advanced-functions/gu-ke-cha-xun.md#gu-ke-cha-xun-ding-dan-bao-guo-zhuang-tai)。
 
 ![&#x8BA2;&#x5355;&#x67E5;&#x8BE2;](../.gitbook/assets/image%20%2831%29.png)
 
