@@ -24,7 +24,7 @@ description: JoinChat简单上手，无需任何编码经验，三步即可创�
 
 ![&#x8BBE;&#x7F6E;&#x57FA;&#x7840;&#x4FE1;&#x606F;](../.gitbook/assets/image%20%2848%29.png)
 
-如果需要修改机器人名字和欢迎语，进入[设置](../untitled/she-zhi.md)进行修改，编辑这个问候消息编辑修改后，内容块标题的右边会出现发布的按钮，点击后，问候消息会发布到实际的Messenger机器人中，一定不要忘记点“发布”
+如果需要修改机器人名字和欢迎语，进入[设置](../general-function/she-zhi.md)进行修改，编辑这个问候消息编辑修改后，内容块标题的右边会出现发布的按钮，点击后，问候消息会发布到实际的Messenger机器人中，一定不要忘记点“发布”
 
 ![&#x4FEE;&#x6539;&#x673A;&#x5668;&#x4EBA;&#x57FA;&#x7840;&#x4FE1;&#x606F;](../.gitbook/assets/image%20%2835%29.png)
 

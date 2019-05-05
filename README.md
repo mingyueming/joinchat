@@ -8,7 +8,7 @@
 
 {% page-ref page="basic-knowledge/" %}
 
-{% page-ref page="untitled/" %}
+{% page-ref page="general-function/" %}
 
 {% page-ref page="advanced-functions/" %}
 
