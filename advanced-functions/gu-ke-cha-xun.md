@@ -86,9 +86,10 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
     "method":"orders",
     "params":{
         "order_number":"12345678902",        //订单编号
-        "filter":"paid"
+        "filter":"unpaid"
         "user_amount":"bob.norman@hostmail.com"  //也可以是手机号
         //user_amount与order_number只能发送一个
+        "order_type":"created_at,desc"
     },
     "pagination":{
         "page":1,
@@ -107,6 +108,7 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
   * closed 代表所有已完成的订单
 * 如果根据订单号获取，params中是order\_number，代表订单号.
 * user\_account和order\_number只能指定一个
+* order\_type是排序规则，以逗号分隔，逗号前世排序的字段，逗号后是排序规则，可以排序的字段有created\_at,updated\_at,processed\_at
 * pagination是用于分页。在用户以账号获取订单列表时给出。page表示页数，limit表示一页的订单数
 
 ### 成功返回
@@ -225,12 +227,9 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
 {
     "method":"packages",
     "params":{
-        "order_number":"12345"
-    },
-    "pagination":{
-        "page":1,
-        "limit":3
-    }
+        "order_number":"12345",
+		"package_number":"3354543",   //order_number和package_numbe只会传一个
+    }   
 }
 ```
 
@@ -261,7 +260,7 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
             "image_url":"http://image.com/image1"  //当前订单的商品缩略图
         },
         {
-            "order_number":23456,
+            "order_number":12345,
             "package_number":"A12345zzz",
             "product_name":"Classic White Shirt 2",
             "carrier":"USPS",
@@ -296,7 +295,8 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
     "params":{
         "title":"T_shirt",
         "product_type":"clothes",
-        "vendor":"JACK & JONES"
+        "vendor":"JACK & JONES",
+        "order_type":"title,desc"
     },
     "pagination":{
         "page":1,
@@ -313,6 +313,7 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
 * product\_type: 根据商品分类来查询
 * vendor: 根据商品品牌来查询
 * 三者之间是并关系，至少有一项即可
+* order\_type是排序规则，以逗号分隔，前面是要排序的字段，后面是升序或者降序。可以排序的值有title,created\_at,updated\_at,排序只有asc,desc两种
 
 ### 成功返回
 
