@@ -27,7 +27,7 @@ define('MY_SHOP_SECRET', 'my_shared_secret');
 
 function verify_webhook($data, $hmac_header)
 {
-  $calculated_hmac = base64_encode(hash_hmac('sha256', $data, SHOPIFY_APP_SECRET));
+  $calculated_hmac = base64_encode(hash_hmac('sha256', $data, SHOPIFY_APP_SECRET, true));
   return hash_equals($hmac_header, $calculated_hmac);
 }
 
@@ -87,8 +87,8 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
     "params":{
         "order_number":"12345678902",        //订单编号
         "filter":"unpaid"
-        "user_amount":"bob.norman@hostmail.com"  //也可以是手机号
-        //user_amount与order_number只能发送一个
+        "user_account":"bob.norman@hostmail.com"  //也可以是手机号
+        //user_account与order_number只能发送一个
         "order_type":"created_at,desc"
     },
     "pagination":{
