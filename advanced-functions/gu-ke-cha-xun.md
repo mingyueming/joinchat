@@ -118,6 +118,7 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
 {
   "success": true,
   "has_next_page" : true,
+  "count" : 2,
   "orders" : [
     {
       "recipient_name":"Bob Norman",          //收件人名称
@@ -321,6 +322,7 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
 {
     "success":true,
     "has_next_page":true,
+    "count" : 1,   //搜索结果的数量
     "products":[
         {
             "product_number":"商品id",
@@ -328,6 +330,7 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
             "image_url":"商品pic",
             "product_type":"商品类型",
             "tags":"商品标签",
+            "vendor":"商品品牌",
             "description":"商品描述",
             "updated_at":"商品更新时间",
             "created_at":"商品创建时间",
