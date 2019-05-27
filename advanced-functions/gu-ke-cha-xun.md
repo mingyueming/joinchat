@@ -357,3 +357,63 @@ JoinChat会在params字段中放置随机生成的token字段。商户需要读�
 }
 ```
 
+## 获取商品品牌和类别
+
+### 请求参数
+
+```php
+{ 
+    "method" : "property",
+     "params" : { 
+      "search" : "type/vendor", //只有这两个值，一次只会传递一个
+       } 
+ } 
+```
+
+### 接口
+
+当商店想给顾客更多查询选择，但是考虑到顾客不知道输入什么，JoinChat将向商户的webhook发出此接口进行查询，获取商家的商品分类和品牌，展示给客户，让客户有明确的选择。
+
+ 字段值说明情况如下： 
+
+type: 商品的所有分类 
+
+vendor: 商品的所有品牌 两者一次只有一个
+
+### 返回结果
+
+#### 品牌接口
+
+```php
+{ 
+"success": true,
+ "vendors" :
+[ 
+  "Nike","LiNing" 
+]
+```
+
+#### 分类接口
+
+```php
+{
+ "success": true, 
+ "types" : 
+  [ 
+    "clothes","T_shirt"
+  ]
+```
+
+### 失败返回
+
+```php
+{
+     "success" : false,
+     "error" : {  
+          "msg" : "unexpected error"
+    } 
+}
+```
+
+
+
