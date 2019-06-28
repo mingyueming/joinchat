@@ -1,14 +1,14 @@
 ---
-description: 目前，Joinchat支持商家店铺系统集成，分别是Shopify店铺商家和独立购物网站两种商家类型。
+description: 目前，JoinChat支持商家店铺系统集成，支持Shopify商家和其他独立购物网站两种类型。
 ---
 
 # 店铺关联
 
 ## Shopify商家
 
-由于Shopify平台支持第三方API对接，因此Joinchat针对Shopify平台开发的相对应的接口与之对接，只需前往Shopify的APP管理平台完成Joinchat APP的绑定，即可轻松启用我们为您量身定制的功能，具体绑定流程如下：
+由于Shopify平台支持第三方API对接，因此Joinchat针对Shopify平台开发的相对应的接口与之对接，只需前往Shopify的APP管理平台完成JoinChat APP的绑定，即可轻松启用我们为您量身定制的功能，具体绑定流程如下：
 
-首先进入店铺关联，点击「shopify商家」
+首先进入店铺关联，点击「Shopify商家」
 
 ![](../.gitbook/assets/image%20%2827%29.png)
 
