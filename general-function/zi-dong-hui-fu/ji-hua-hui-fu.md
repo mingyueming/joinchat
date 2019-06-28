@@ -70,7 +70,7 @@ Facebook 目前支持的标签列表如下：
     </tr>
     <tr>
       <td style="text-align:left">&#x793E;&#x533A;&#x901A;&#x77E5;</td>
-      <td style="text-align:left">&#x9001;&#x901A;&#x77E5;&#x6765;&#x63D0;&#x9192;&#x7D27;&#x6025;&#x4E8B;&#x4EF6;&#x6216;&#x516C;&#x7528;&#x8BBE;&#x65BD;&#x95EE;&#x9898;&#xFF0C;&#x6216;&#x5728;&#x60A8;&#x7684;&#x793E;&#x7FA4;&#x5185;&#x8BE2;&#x95EE;&#x5E73;&#x5B89;&#x72B6;&#x51B5;</td>
+      <td style="text-align:left">&#x53D1;&#x9001;&#x901A;&#x77E5;&#x6765;&#x63D0;&#x9192;&#x7D27;&#x6025;&#x4E8B;&#x4EF6;&#x6216;&#x516C;&#x7528;&#x8BBE;&#x65BD;&#x95EE;&#x9898;&#xFF0C;&#x6216;&#x5728;&#x60A8;&#x7684;&#x793E;&#x7FA4;&#x5185;&#x8BE2;&#x95EE;&#x5E73;&#x5B89;&#x72B6;&#x51B5;</td>
       <td
       style="text-align:left">&#x6A71;&#x7A97;&#x5361;&#x7247;</td>
     </tr>

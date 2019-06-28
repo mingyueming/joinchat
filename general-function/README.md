@@ -1,5 +1,5 @@
 ---
-description: 在这里，我们给大家介绍以下JoinChatzhi的常用功能。
+description: 在这里，我们给大家介绍以下JoinChat的常用功能。
 ---
 
 # 通用功能
