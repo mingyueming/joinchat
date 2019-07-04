@@ -39,7 +39,7 @@ eg：设置的延迟时间为20分钟，用户第一次下单时间为10:00，�
 
 当顾客勾选checkbox并向购物车内添加商品时，将自动成为受众。
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/image%20%2868%29.png)
 
 {% hint style="warning" %}
 请注意，该事件可以成功触发当前提是需要用户在JoinChat中完成[绑定邮箱](../../basic-knowledge/xiao-xi-mo-ban-ka-pian.md#bang-ding-you-xiang)，如果店铺邮箱和Facebook账号邮箱不一致，我们则无法给用户推送消息。

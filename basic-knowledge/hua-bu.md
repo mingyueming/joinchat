@@ -19,7 +19,7 @@ description: >-
 
 ![&#x65B0;&#x5EFA;&#x6309;&#x94AE;](../.gitbook/assets/image%20%287%29.png)
 
-![&#x8FDE;&#x63A5;&#x70B9;&#x5FEB;&#x901F;&#x521B;&#x5EFA;](../.gitbook/assets/image%20%2817%29.png)
+![&#x8FDE;&#x63A5;&#x70B9;&#x5FEB;&#x901F;&#x521B;&#x5EFA;](../.gitbook/assets/image%20%2818%29.png)
 
 ## 调整布局
 
@@ -27,17 +27,17 @@ description: >-
 
 **回到原点**：消息流中的“起始点”消息块自动回到画布的左上角
 
-![&#x56DE;&#x5230;&#x539F;&#x70B9;](../.gitbook/assets/image%20%2819%29.png)
+![&#x56DE;&#x5230;&#x539F;&#x70B9;](../.gitbook/assets/image%20%2820%29.png)
 
 **自动布局：**将画布上散乱的消息按流程顺序整齐排布
 
-![&#x81EA;&#x52A8;&#x5E03;&#x5C40;](../.gitbook/assets/image%20%2857%29.png)
+![&#x81EA;&#x52A8;&#x5E03;&#x5C40;](../.gitbook/assets/image%20%2862%29.png)
 
 **原始大小：**把画布上的所有消息块放大到最大的
 
-![&#x539F;&#x59CB;&#x5927;&#x5C0F;](../.gitbook/assets/image%20%2830%29.png)
+![&#x539F;&#x59CB;&#x5927;&#x5C0F;](../.gitbook/assets/image%20%2831%29.png)
 
 **全部展示：**把画布上所有的内容缩小，可以全部展示
 
-![&#x5168;&#x90E8;&#x5C55;&#x793A;](../.gitbook/assets/image%20%2810%29.png)
+![&#x5168;&#x90E8;&#x5C55;&#x793A;](../.gitbook/assets/image%20%2811%29.png)
 
