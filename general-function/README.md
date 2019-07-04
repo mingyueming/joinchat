@@ -16,7 +16,7 @@ description: 在这里，我们给大家介绍以下JoinChat的常用功能，�
 
 {% page-ref page="ren-gong-ke-fu.md" %}
 
-{% page-ref page="nei-rong-guan-li.md" %}
+{% page-ref page="nei-rong-guan-li/" %}
 
 {% page-ref page="she-zhi/" %}
 
