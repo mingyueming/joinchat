@@ -14,13 +14,13 @@ JoinChat平台上，一个Facebook Page的Messenger只能绑定一个机器人�
 
 JoinChat会提示要求你输入要邀请的用户的邮箱地址👇，邀请成功后好友即可与您共同管理这个机器人账号了。
 
-![&#x9080;&#x8BF7;&#x754C;&#x9762;](../../.gitbook/assets/image%20%2824%29.png)
+![&#x9080;&#x8BF7;&#x754C;&#x9762;](../../.gitbook/assets/image%20%2826%29.png)
 
 ## 接受邀请
 
 接受好友邀请，共同管理Messenger机器人。我们通过给好友发送邀请特定角色的邮件来实现用户的绑定。
 
-![&#x9080;&#x8BF7;&#x90AE;&#x4EF6;](../../.gitbook/assets/image%20%2838%29.png)
+![&#x9080;&#x8BF7;&#x90AE;&#x4EF6;](../../.gitbook/assets/image%20%2841%29.png)
 
 一旦用户接受邀请，在Messenger机器人列表的管理者列表中，就会显示该用户，并且该用户也有权限去管理这个机器人了。
 
@@ -28,7 +28,7 @@ JoinChat会提示要求你输入要邀请的用户的邮箱地址👇，邀请�
 
 当受邀人在进入“管理机器人“页面是，就会看到我以什么样的角色管理了哪些机器人。
 
-![&#x7BA1;&#x7406;&#x673A;&#x5668;&#x4EBA;](../../.gitbook/assets/image%20%2810%29.png)
+![&#x7BA1;&#x7406;&#x673A;&#x5668;&#x4EBA;](../../.gitbook/assets/image%20%2812%29.png)
 
 
 
