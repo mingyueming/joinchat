@@ -8,7 +8,7 @@ description: 欢迎回复，是新用户关注机器人后首次没收到的推�
 
 欢迎回复，是Messenger机器人中最重要的消息之一，合理的设置欢迎设置，可以使得用户得到使用Messenger机器人的良好的引导，而糟糕的欢迎消息，使得用户无法知道Messenger机器人究竟有什么用。
 
-![&#x6B22;&#x8FCE;&#x56DE;&#x590D;](../../.gitbook/assets/image%20%2898%29.png)
+![&#x6B22;&#x8FCE;&#x56DE;&#x590D;](../../.gitbook/assets/image%20%28100%29.png)
 
 我们建议您通过欢迎消息，设置一些引导用户订阅，或者介绍如何使用菜单等引导用户使用Messenger机器人的内容。
 
