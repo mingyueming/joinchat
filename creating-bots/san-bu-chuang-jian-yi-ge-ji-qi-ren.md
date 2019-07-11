@@ -6,7 +6,7 @@ description: JoinChat简单上手，无需任何编码经验，三步即可创�
 
 完成授权后，我们将进行一个创建机器人的引导，按照我们的提示进行创建即可：
 
-![&#x673A;&#x5668;&#x4EBA;&#x7BA1;&#x7406;&#x9875;&#x9762;](../.gitbook/assets/image%20%28120%29.png)
+![&#x673A;&#x5668;&#x4EBA;&#x7BA1;&#x7406;&#x9875;&#x9762;](../.gitbook/assets/image%20%28124%29.png)
 
 机器人管理页面主要分为两部分，一部分是管理您自己创建的机器人，另一部分是作为某种角色受邀进行管理的机器人。下面我先为大家介绍如何创建自己的机器人，邀请好友管理你的机器人则进入到[身份管理](../general-function/she-zhi/shen-fen-guan-li.md)查看。
 
@@ -14,7 +14,7 @@ description: JoinChat简单上手，无需任何编码经验，三步即可创�
 
 成功登陆进入机器人管理页面后，点击“创建机器人“：
 
-![&#x7ED1;&#x5B9A;&#x673A;&#x5668;&#x4EBA;](../.gitbook/assets/image%20%28100%29.png)
+![&#x7ED1;&#x5B9A;&#x673A;&#x5668;&#x4EBA;](../.gitbook/assets/image%20%28104%29.png)
 
 绑定机器人的页面展示了您给JoinChat进行授权过的全部主页列表（前提您在Facebook 中是该主页的管理员），勾选一个您想要创建机器人的主页。
 
@@ -30,19 +30,19 @@ Tips：当您创建好新主页回到绑定机器人页面时，JoinChat是无�
 
 您需要为您的机器人设置一个名字（最多支持20个中文字符）和设置用户在搜索到该机器人时所看见的问候语。
 
-![&#x8BBE;&#x7F6E;&#x57FA;&#x7840;&#x4FE1;&#x606F;](../.gitbook/assets/image%20%2885%29.png)
+![&#x8BBE;&#x7F6E;&#x57FA;&#x7840;&#x4FE1;&#x606F;](../.gitbook/assets/image%20%2887%29.png)
 
 如果需要修改机器人名字和介绍语，进入[基础设置](../general-function/she-zhi/ji-chu-she-zhi.md)进行修改。在完成编辑修改后右边会出现“发布“按钮，点击后问候消息会发布到实际的Messenger机器人中，一定不要忘记点“发布”。
 
-![&#x4FEE;&#x6539;&#x673A;&#x5668;&#x4EBA;&#x57FA;&#x7840;&#x4FE1;&#x606F;](../.gitbook/assets/image%20%2854%29.png)
+![&#x4FEE;&#x6539;&#x673A;&#x5668;&#x4EBA;&#x57FA;&#x7840;&#x4FE1;&#x606F;](../.gitbook/assets/image%20%2855%29.png)
 
-![&#x793A;&#x4F8B;&#x56FE;](../.gitbook/assets/image%20%2842%29.png)
+![&#x793A;&#x4F8B;&#x56FE;](../.gitbook/assets/image%20%2843%29.png)
 
 ## 第三步-选择模板
 
 在这个界面中，选择相应模板后点击“创建”按钮，即完成首个机器人的创建。
 
-![&#x9009;&#x62E9;&#x6A21;&#x677F;](../.gitbook/assets/image%20%28101%29.png)
+![&#x9009;&#x62E9;&#x6A21;&#x677F;](../.gitbook/assets/image%20%28105%29.png)
 
 同时JoinChat提供了几种模板供用户选择：
 
