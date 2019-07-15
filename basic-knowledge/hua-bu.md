@@ -17,9 +17,9 @@ description: >-
 
 在画布上有两种方式可以快速创建消息块或动作快，通过画布右上角快速创建按钮和从按钮的灰色消息连接点引出并单击鼠标左键进行快速创建。
 
-![&#x65B0;&#x5EFA;&#x6309;&#x94AE;](../.gitbook/assets/image%20%2813%29.png)
+![&#x65B0;&#x5EFA;&#x6309;&#x94AE;](../.gitbook/assets/image%20%2815%29.png)
 
-![&#x8FDE;&#x63A5;&#x70B9;&#x5FEB;&#x901F;&#x521B;&#x5EFA;](../.gitbook/assets/image%20%2833%29.png)
+![&#x8FDE;&#x63A5;&#x70B9;&#x5FEB;&#x901F;&#x521B;&#x5EFA;](../.gitbook/assets/image%20%2838%29.png)
 
 ## 调整布局
 
@@ -27,17 +27,17 @@ description: >-
 
 **回到原点**：消息流中的“起始点”消息块自动回到画布的左上角
 
-![&#x56DE;&#x5230;&#x539F;&#x70B9;](../.gitbook/assets/image%20%2836%29.png)
+![&#x56DE;&#x5230;&#x539F;&#x70B9;](../.gitbook/assets/image%20%2841%29.png)
 
 **自动布局：**将画布上散乱的消息按流程顺序整齐排布
 
-![&#x81EA;&#x52A8;&#x5E03;&#x5C40;](../.gitbook/assets/image%20%28112%29.png)
+![&#x81EA;&#x52A8;&#x5E03;&#x5C40;](../.gitbook/assets/image%20%28124%29.png)
 
 **原始大小：**把画布上的所有消息块放大到最大的
 
-![&#x539F;&#x59CB;&#x5927;&#x5C0F;](../.gitbook/assets/image%20%2852%29.png)
+![&#x539F;&#x59CB;&#x5927;&#x5C0F;](../.gitbook/assets/image%20%2858%29.png)
 
 **全部展示：**把画布上所有的内容缩小，可以全部展示
 
-![&#x5168;&#x90E8;&#x5C55;&#x793A;](../.gitbook/assets/image%20%2819%29.png)
+![&#x5168;&#x90E8;&#x5C55;&#x793A;](../.gitbook/assets/image%20%2822%29.png)
 

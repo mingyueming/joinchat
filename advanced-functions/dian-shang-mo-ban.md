@@ -10,15 +10,15 @@ description: 目前，JoinChat支持商家店铺系统集成，支持Shopify商�
 
 首先进入店铺关联，点击「Shopify商家」
 
-![](../.gitbook/assets/image%20%2849%29.png)
+![](../.gitbook/assets/image%20%2855%29.png)
 
 输入您在Shopify的店铺URL，点击「确认」，就会跳转至JoinChat app安装页面
 
-![&#x8F93;&#x5165;&#x5E97;&#x94FA;URL](../.gitbook/assets/image%20%2879%29.png)
+![&#x8F93;&#x5165;&#x5E97;&#x94FA;URL](../.gitbook/assets/image%20%2886%29.png)
 
 成功登陆店铺并安装好后，我们会提示您已经成功完成JoinChat APP的安装。
 
-![&#x9009;&#x62E9;&#x529F;&#x80FD;](../.gitbook/assets/image%20%2874%29.png)
+![&#x9009;&#x62E9;&#x529F;&#x80FD;](../.gitbook/assets/image%20%2880%29.png)
 
 在这里，JoinChat目前有三种功能供Shopify商家使用，「物流更新」、「下单未付款」和「订单回执」，当您启用该功能后，用户在Shopify上完成购物后，将自动通过JoinChat给Messenger用户发送他所购买商品的订单回执信息。当有物流状态进行变更时，将自动通过JoinChat给Messenger用户发送物流最新状态。在推送物流更新和订单回执这两种固定模板时，JoinChat还支持在消息模板后面选择一条已有的消息，一同发送给用户，方便运营人员精细化运用。这两项功能将极大提升用户在您网站中的售后体验。
 
