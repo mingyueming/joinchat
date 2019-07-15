@@ -12,13 +12,15 @@ Joinchat针对电商客户提供了三个功能卡片, 分别是
 
 ## 接口安全性验证
 
-JoinChat会为每一个独立站商家生成独一无二的私钥。在调取api时，JoinChat将用此密钥对整个请求的Body进行SHA256、base64加密，并将签名加在请求Header的X-Joinchat-Signature字段里。商户需要验证此字段来证明此请求确实来自JoinChat，并注意不要泄露自己的私钥。 商户可以随时在后台更改自己的私钥。 下面是一个使用PHP去验证webhook的示例：
+JoinChat会为每一个机器人生成独一无二的私钥。JoinChat调取API时，先用此密钥对整个请求参数进行SHA256、base64加密，并将签名加在请求Header的X-Joinchat-Signature字段里。商户需要验证此字段来证明此请求确实来自JoinChat，并注意不要泄露自己的私钥。 商户可以随时在后台`设置--API管理页面`更改自己的私钥
+
+开发者可以使用如下代码验证签名：
 
 ```php
 <?php
 // API管理中秘钥
 const API_SECRET  = 'xxxxx';
-// 请求头设置的签名
+// 获取请求头设置的签名, PHP会自动拼上HTTP_
 $src_sign = $_SERVER['HTTP_X_JOINCHAT_SIGNATURE'];
 // 获取请求参数
 $input = file_get_contents('php://input');

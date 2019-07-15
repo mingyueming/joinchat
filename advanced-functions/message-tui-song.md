@@ -1,273 +1,30 @@
+---
+description: '开发人员可以调用Joinchat发送消息api, 向messenger用户发送消息, 是客户自助解决问题的高效方案.'
+---
+
 # 消息推送
 
-用户可以调用Joinchat发送消息api, 向messenger用户发送消息, 是客户自助解决问题的高效方案.
+## 接口安全性验证
 
-电商机器人的API管理接口，为商家提供了一个有效互动的方式，提高网站的购物体验。 正确集成API管理后，商家将可以以如下方式向主页粉丝主动推送消息:
+JoinChat会为每个机器人生成独一无二的私钥。在调取Joinchat发送API时，开发人员需要用此密钥对整个请求参数提进行SHA256、base64加密，并将签名加在请求Header的X-Joinchat-Signature字段里。JoinChat会根据请求体和签名验证接口安全性,  注意不要泄露自己的私钥。开发者可以随时在后台`设置--API管理页面`更改自己的私钥
 
-* 顾客成功下单后，通过 PSID 向其推送一条订单确认回执
-* 订单发货/签收时，通过 PSID 向顾客发送物流状态更新提示
-
-## 推送接口说明
-
-X-Joinchat-Signature用于验证webhook。当商家向JoinChat推送数据时，在header头中添加X-Joinchat-Signature，X-Shop-Domain标识，用于JoinChat验证数据来源是否正确
-
-## 订单回执
-
-### 接口
+下面是调用JoinChat发送API向用户发送消息的简单示例 ：
 
 ```php
-{
-  "request": {
-    "page_id": "407898491811542",
-    "topic": "Order/Receipt"
-  },
-  "recipient": {
-      "id": "<psid>" 
-   },
-  "params": {
-      "recipient_name": "John Doe",  //收件人姓名
-      "order_number": "U5555", 
-      "currency": "USD",
-      "payment_method": "Visa 2345",
-      "order_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/classic_white_shirt.jpg",
-      "timestamp": 1523619550,
-      "address": {
-        "street_1": "UNICEF 125 Maiden Lane",
-        "street_2": "11th Floor",
-        "city": "New York",
-        "postal_code": "10038",
-        "state": "NY",
-        "country": "US"
-      },
-      "summary": {
-        "subtotal": 138.4,
-        "shipping_cost": 0,
-        "total_tax": 0,
-        "total_cost": 138.4
-      },
-      "adjustments": [],
-      "elements": [
-        {
-          "title": "Classic White Shirts",
-          "subtitle": "100% Soft and Luxurious Cotton",
-          "quantity": 2,
-          "price": 11.99,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/classic_white_shirt.jpg"
-        },
-        {
-          "title": "Floral Belted Romper",
-          "subtitle": "Casual romper featuring striped pattern",
-          "quantity": 2,
-          "price": 13.89,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/floral_belted_romper.jpg"
-        },
-        {
-          "title": "One Shoulder Bikini Set",
-          "subtitle": "Low Waisted",
-          "quantity": 2,
-          "price": 14.66,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/one_shoulder_bikini_set.jpg"
-        },
-        {
-          "title": "Smocked Mini Dress",
-          "subtitle": "Elastic waistband",
-          "quantity": 2,
-          "price": 15.77,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/smocked_mini_dress.jpg"
-        },
-        {
-          "title": "Twist Tied Top",
-          "subtitle": "Easily look good to pair it with anything",
-          "quantity": 2,
-          "price": 12.89,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/twisted_tied_top.jpg"
-        }
-      ] 
-  }
-}
+<?php
+// API管理中秘钥
+const API_SECRET  = 'xxxxx';
+// 请求参数
+$params = '{"page_id":12345,"recipient":{"id":"123456"},"params":{"text":"I am test message"}}';
+// 将参数和秘钥加密生成签名
+$sign = base64_encode(hash_hmac('sha256', $params, API_SECRET, true));
+/*httpClient 是伪代码*/
+$client = new httpClient();
+// 将签名添加到请求头中
+$client->setHeaders(['X_JOINCHAT_SIGNATURE' => $sign]);
+// 调用JoinChat发送API向messenger用户发送消息
+$resp = $client->post('https://joinchat.ai/api/send/messenger', $params);
 ```
 
-#### 说明
 
-当商户需要向用户推送订单回执时，由商户填充params数据，JoinChat验证数据格式正确后向用户发送消息，其中recipent字段包含的值有psid，phone，email。例如传递邮箱，可以"recipient":{"email":''"youremail"}。
-
-#### 成功返回
-
-```php
-{
-    "success": true,
-    "recipient_id": "1602407863220595"
-}
-```
-
-#### 失败返回
-
-```php
-{
-    "success": false
-    "errors": {
-        "code": 10010,
-        "msg": "Recipient not found",
-    }
-}
-```
-
-### 物流更新
-
-#### 接口
-
-```php
-{
-  "request": {
-    "page_id": "407898491811542",
-    "topic": "package/update"
-  },
-  "recipient": {
-      "id": "<psid>" 
-   },
-  "params": {
-    "tracking_number": "zvfVUREPVPUQ1oMl",    // 物流号
-    "image_url": "https://unsplash.it/120/120/?random",  //订单商品的缩略图
-    "tracking_url": "http://shop.bothub.ai",  //物流详情url
-    "recipient_name": "Peter",    //收件人姓名
-    "tracking_status": "shipped"  //物流状态
-  }
-}
-```
-
-#### 说明
-
-page\_id是 店铺关联的facebook主页id，topic是来明确推送消息的类别，recipient是用户标识，可以是id，email，phone。params中根据topic中类别来推送具体的信息。
-
-#### 成功返回
-
-```php
-{
-    "success": true,
-    "recipient_id": "1602407863220595"
-}
-```
-
-#### 失败返回
-
-```php
-{
-    "success": false,
-    "error": {
-        "code": 10010,
-        "msg": "Recipient not found",
-   }
-}
-```
-
-### 未支付订单
-
-#### 接口：
-
-```php
-{
-  "request": {
-    "page_id": "407898491811542",
-    "topic": "Order/Unpaid"
-  },
-  "recipient": {
-      "id": "<psid>"   //也可以是邮箱，电话
-   },
-  "params": {
-      "recipient_name": "John Doe",
-      "order_number": "U5555",
-      "currency": "USD",
-      "payment_method": "",
-      "order_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/classic_white_shirt.jpg",
-      "timestamp": 1523619550,
-      "address": {
-        "street_1": "UNICEF 125 Maiden Lane",
-        "street_2": "11th Floor",
-        "city": "New York",
-        "postal_code": "10038",
-        "state": "NY",
-        "country": "US"
-      },
-      "summary": {
-        "subtotal": 138.4,
-        "shipping_cost": 0,
-        "total_tax": 0,
-        "total_cost": 138.4
-      },
-      "adjustments": [],
-      "elements": [
-        {
-          "title": "Classic White Shirts",
-          "subtitle": "100% Soft and Luxurious Cotton",
-          "quantity": 2,
-          "price": 11.99,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/classic_white_shirt.jpg"
-        },
-        {
-          "title": "Floral Belted Romper",
-          "subtitle": "Casual romper featuring striped pattern",
-          "quantity": 2,
-          "price": 13.89,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/floral_belted_romper.jpg"
-        },
-        {
-          "title": "One Shoulder Bikini Set",
-          "subtitle": "Low Waisted",
-          "quantity": 2,
-          "price": 14.66,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/one_shoulder_bikini_set.jpg"
-        },
-        {
-          "title": "Smocked Mini Dress",
-          "subtitle": "Elastic waistband",
-          "quantity": 2,
-          "price": 15.77,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/smocked_mini_dress.jpg"
-        },
-        {
-          "title": "Twist Tied Top",
-          "subtitle": "Easily look good to pair it with anything",
-          "quantity": 2,
-          "price": 12.89,
-          "currency": "USD",
-          "image_url": "https://storage.googleapis.com/assets.bothub.ai/bothub/templates/twisted_tied_top.jpg"
-        }
-      ] 
-  }
-}
-```
-
-#### 说明
-
-page\_id是 店铺关联的facebook主页id，topic是来明确推送消息的类别，recipient是用户标识，可以是id，email，phone。params中根据topic中类别来推送具体的信息。
-
-#### 成功返回
-
-```php
-{
-    "success": true,
-    "recipient_id": "1602407863220595"
-}
-```
-
-#### 失败返回
-
-```php
-{
-    "success": false
-    "errors": {
-        "code": 10010,
-        "msg": "Recipient not found",
-    }
-}
-```
 
