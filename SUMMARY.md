@@ -39,6 +39,6 @@
 * [高级功能](advanced-functions/README.md)
   * [电商模板](advanced-functions/dian-shang-guan-li-1.md)
   * [店铺关联](advanced-functions/dian-shang-mo-ban.md)
-  * [顾客查询](advanced-functions/gu-ke-cha-xun.md)
-  * [商家推送](advanced-functions/shang-jia-tui-song.md)
+  * [电商API对接](advanced-functions/gu-ke-cha-xun.md)
+  * [消息推送](advanced-functions/message-tui-song.md)
 
