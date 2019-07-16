@@ -9,7 +9,7 @@ description: >-
 
 消息块是Messenger平台支持的各种形式可以发送给用户如文本、图片、画册、视频以及JoinChat提供的各种类型卡片，如下图：
 
-![&#x6D88;&#x606F;&#x5757;](../.gitbook/assets/image%20%2856%29.png)
+![&#x6D88;&#x606F;&#x5757;](../.gitbook/assets/image%20%2857%29.png)
 
 Messenger支持在使用卡片过程中可以与用户进行交互，如文本卡片最多支持设置3个按钮。
 
@@ -27,19 +27,21 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 通过用户的行为认知，给用户赋予特定的标识，可以帮助您丰富用户画像，更好地划分用户群。
 
-![&#x6DFB;&#x52A0;&#x6807;&#x7B7E;](../.gitbook/assets/image%20%2872%29.png)
+![&#x6DFB;&#x52A0;&#x6807;&#x7B7E;](../.gitbook/assets/image%20%2876%29.png)
+
+管理全部标签则在设置-[属性/标签](../general-function/she-zhi/shu-xing-biao-qian.md)中进行。
 
 ### 订阅计划和取消订阅计划
 
 当用户触发了添加该动作的按钮后，机器人会自动推送一系列消息。例如询问用户是否需要店铺动态时，当用户点击“同意”后，您可以在“同意”按钮下关联店铺的动态系列消息。
 
-![&#x8BA2;&#x9605;&#x5E8F;&#x5217;](../.gitbook/assets/image%20%2849%29.png)
+![&#x8BA2;&#x9605;&#x5E8F;&#x5217;](../.gitbook/assets/image%20%2850%29.png)
 
 ### 设置用户属性和清除用户属性
 
 该动作可以给用户创建/清除某些特定的属性，如性别、电话、邮箱等。通过该动作收集用户信息后存入用户详情中。为了准确的收集特定信息，我们支持以下四类属性：
 
-![&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x5C5E;&#x6027;](../.gitbook/assets/image%20%28115%29.png)
+![&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x5C5E;&#x6027;](../.gitbook/assets/image%20%28119%29.png)
 
 | 属性类型 | 用例 |
 | :--- | :--- |
@@ -48,25 +50,25 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 | 日期类型 | 如生日 |
 | 时间类型 | 如用餐时间 |
 
-管理属性则在设置-[属性](../general-function/she-zhi/shu-xing-biao-qian.md)中进行。
+管理全部属性则在设置-[属性/标签](../general-function/she-zhi/shu-xing-biao-qian.md)中进行。
 
 ### 呼叫人工客服
 
 该动作用于用户点击特定按钮后，由人工来继续服务以达到更好的效果。
 
-![&#x547C;&#x53EB;&#x4EBA;&#x5DE5;&#x5BA2;&#x670D;](../.gitbook/assets/image%20%28147%29.png)
+![&#x547C;&#x53EB;&#x4EBA;&#x5DE5;&#x5BA2;&#x670D;](../.gitbook/assets/image%20%28153%29.png)
 
 ### 订阅机器人和取消订阅机器人
 
 为了提供更好的用户体验，建议运营人员在新用户首次接触机器人时，对用户进行友好提示，仅对同意订阅机器人并触发“订阅机器人”动作的用户进行主动推送营销类或非营销类消息。
 
-![&#x8BA2;&#x9605;&#x673A;&#x5668;&#x4EBA;](../.gitbook/assets/image%20%28110%29.png)
+![&#x8BA2;&#x9605;&#x673A;&#x5668;&#x4EBA;](../.gitbook/assets/image%20%28114%29.png)
 
 ### 查询订单
 
 该功能为电商高级工具，为用户提供便捷的途径进行订单查询。使用该功能前需确保您已经完成店铺绑定，具体使用说明可见[顾客查询订单&包裹](../advanced-functions/gu-ke-cha-xun.md#gu-ke-cha-xun-ding-dan-bao-guo-zhuang-tai)。
 
-![&#x8BA2;&#x5355;&#x67E5;&#x8BE2;](../.gitbook/assets/image%20%2860%29.png)
+![&#x8BA2;&#x5355;&#x67E5;&#x8BE2;](../.gitbook/assets/image%20%2861%29.png)
 
 ### 开启/关闭翻译
 
@@ -80,7 +82,7 @@ JoinChat内置了谷歌翻译功能，可以通过识别用户的语言将配置
 由于所有翻译功能有谷歌翻译提供，因此翻译的效果取决于谷歌翻译软件本身的识别率，针对语言混搭（文本中出现多种语言和表情符号等）会对翻译效果造成一定影响，因此请运营人员注意。
 {% endhint %}
 
-![&#x56FA;&#x5B9A;&#x83DC;&#x5355;&#x4E2D;&#x7684;&#x7FFB;&#x8BD1;&#x529F;&#x80FD;](../.gitbook/assets/image%20%28112%29.png)
+![&#x56FA;&#x5B9A;&#x83DC;&#x5355;&#x4E2D;&#x7684;&#x7FFB;&#x8BD1;&#x529F;&#x80FD;](../.gitbook/assets/image%20%28116%29.png)
 
 ## 消息流
 

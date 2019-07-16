@@ -31,11 +31,11 @@ description: >-
 
 **自动布局：**将画布上散乱的消息按流程顺序整齐排布
 
-![&#x81EA;&#x52A8;&#x5E03;&#x5C40;](../.gitbook/assets/image%20%28124%29.png)
+![&#x81EA;&#x52A8;&#x5E03;&#x5C40;](../.gitbook/assets/image%20%28128%29.png)
 
 **原始大小：**把画布上的所有消息块放大到最大的
 
-![&#x539F;&#x59CB;&#x5927;&#x5C0F;](../.gitbook/assets/image%20%2858%29.png)
+![&#x539F;&#x59CB;&#x5927;&#x5C0F;](../.gitbook/assets/image%20%2859%29.png)
 
 **全部展示：**把画布上所有的内容缩小，可以全部展示
 
