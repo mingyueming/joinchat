@@ -49,10 +49,10 @@ $resp = $client->post('https://joinchat.ai/api/send/messenger', $params);
     },
     "message":{
         "template_type":"text",
-		"text":"Hello World",
+		"text":"Hello World"
     },
 	"tag":"ACCOUNT_UPDATE",
-	"delay": 1,
+	"delay": 1
 }
 ```
 
@@ -63,7 +63,7 @@ $resp = $client->post('https://joinchat.ai/api/send/messenger', $params);
   * recipient.id: 消息接收人的id, 可在用户管理中查看
   * recipient.phone: 消息接收人的phone, 可在用户管理中查看, 需用户绑定phone
   * recipient.email: 消息接收人的email, 可在用户管理中查看, 需用户绑定email
-  * recipient.joinchat\_uuid: **接收消息人的joinchat\_uuid, 需要机器人在`推广工具->sdk管理`中,启用插件, 并将代码插入到网站中, 用户点击插件\(Send to Messenger\), JoinChat即可将用户uuid和facebook\_id做关联, 开发者从cookie中获取uuid, 即可使用uuid发送消息**
+  * recipient.uuid: **接收消息人的joinchat\_uuid, 需要机器人在`推广工具->sdk管理`中,启用插件, 并将代码插入到网站中, 用户点击插件\(Send to Messenger\), JoinChat即可将用户uuid和facebook\_id做关联, 开发者从cookie中获取uuid, 即可使用其发送消息**
 * message: 消息对象
   * template\_type: 消息类型 
     * text: 文本消息
@@ -153,7 +153,9 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 * text: UTF-8 编码文本，最多 640 个字符。文本显示在按钮上方
 * buttons: 显示为行动号召的一组[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)，包括 1-3 个按钮, 参见`按钮类型`模块
 
-## 菜单消息
+## 
+
+## 
 
 ### 请求参数示例:
 
