@@ -190,6 +190,8 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 * text: UTF-8 编码文本，最多 640 个字符。文本显示在按钮上方
 * buttons: 数组&lt;button&gt; 显示为行动号召的一组[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)，包括 1-3 个按钮, 参见`按钮类型`模块
 
+![](../.gitbook/assets/image%20%2897%29.png)
+
 ## 画册消息
 
 ### 请求参数示例:
@@ -241,6 +243,8 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
   * image\_url: 字符串  _**可选。**_ 显示在模板中的图片网址。
   * default\_action: 对象  _**可选。**_ 用户轻触模板时执行的默认操作。接受与[网址按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/url-button)相同的属性，`title` 除外。
   * buttons: 数组&lt;button&gt;  _**可选。**_ 要添加到模板中的[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)数组。每个元素最多支持 3 个按钮。
+
+![img](../.gitbook/assets/image%20%2899%29.png)
 
 ## 列表消息
 
@@ -340,7 +344,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
   * default\_action _**可选。**_[网址按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/url-button#fields)，指定用户轻触列表项时要执行的默认操作
   * buttons: 一组按钮,  _**可选。**_ 要显示在列表项中的[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)。最多支持 1 个按钮。
 
+![img](../.gitbook/assets/image%20%28134%29.png)
 
 
-## 
 
