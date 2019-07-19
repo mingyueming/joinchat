@@ -26,7 +26,7 @@ Facebook 在2016年4月12号开放了 Messenger Platform，使得用户可以通
 
 在客户的官网上，安装聊天插件
 
-![&#x804A;&#x5929;&#x63D2;&#x4EF6;](.gitbook/assets/image%20%28137%29.png)
+![&#x804A;&#x5929;&#x63D2;&#x4EF6;](.gitbook/assets/image%20%28138%29.png)
 
 ### m.me链接
 

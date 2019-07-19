@@ -6,7 +6,7 @@ description: '开发人员可以调用Joinchat发送消息api, 向messenger用�
 
 ## 请求URL
 
-```php
+```http
 https://joinchat.ai/api/send_message
 ```
 
@@ -41,7 +41,7 @@ $resp = $client->post('https://joinchat.ai/api/send_message', $params);
 
 ### 参数示例
 
-```text
+```php
 {
     "page_id":12345,
     "recipient":{
@@ -109,7 +109,7 @@ $resp = $client->post('https://joinchat.ai/api/send_message', $params);
 
 * 创建推广插件后, 点击SDK管理, 选择刚创建的插件, 启用后, 然后复制链接插码到自己的网站
 
-![](../.gitbook/assets/image%20%28154%29.png)
+![](../.gitbook/assets/image%20%28155%29.png)
 
 * 开发者打开自己网站, 即可看到send to messenger插件
 
@@ -117,7 +117,7 @@ $resp = $client->post('https://joinchat.ai/api/send_message', $params);
 
 * 当用户点击`Send to Messenger`插件, JoinChat会执行开发者设置的Javascript回调函数, 在回调函数中开发者可以将uuid和自己网站的用户id关联起来, 回调函数设置方式如下
 
-```text
+```javascript
 <script type="text/javascript">
     /**
      * 回调函数必须命名为joinchatSendToMessengerCallback
@@ -162,7 +162,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 #### 格式
 
-```text
+```javascript
 {
   "type": "web_url",
   "url": "<URL_TO_OPEN_IN_WEBVIEW>",
@@ -173,42 +173,75 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 #### 参数解释
 
 * type: 值必须为web\_url
-* url: 点击按钮要打开的网址, 需要在Joinchat管理端将该网址域名添加到白名单中
+* url: 点击按钮要打开的网址,
 * title: 按钮标题。请勿超过 20 个字符。
+
+| 属性 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| `type` | 字符串 | 按钮的类型。必须是 `web_url`。 |
+| `title` | 字符串 | 按钮标题。请勿超过 20 个字符。 |
+| `url` | 字符串 | 用户轻触按钮后，此网址将在移动浏览器中打开。需要在Joinchat管理端将该网址域名添加到白名单中 |
+| `webview_height_ratio` | 字符串 | _**可选。**_ WebView 的高度。有效值：`compact`、`tall`、`full`。默认为 `full`。 |
 
 ### 回传按钮
 
 #### 格式
 
-```text
+```javascript
 {
   "type":"postback",
   "title":"<BUTTON_TEXT>",
-  "payload":"<DEVELOPER_DEFINED_PAYLOAD>"
+  "payload":"{\"block_id\":1}"
 }
 ```
 
 #### 参数解释
 
-* type: 值必须为postback
-* payload: 点击按钮, 发送到Joinchat的数据, 目前支持格式为:
-  * block\_id: 点击按钮, 触发的block
-  * flow\_id: 点击按钮, 触发的flow
-
-```text
-{
-    "block_id" : "123",
-    "flow_id" : "12"
-}
-```
-
-* title: 按钮标题。请勿超过 20 个字符。
-
-## 文本消息
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x5B57;&#x6BB5;</th>
+      <th style="text-align:left">&#x7C7B;&#x578B;</th>
+      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>type</code>
+      </td>
+      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
+      <td style="text-align:left">&#x6309;&#x94AE;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5FC5;&#x987B;&#x4E3A; <code>postback</code>&#x3002;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>title</code>
+      </td>
+      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
+      <td style="text-align:left">&#x6309;&#x94AE;&#x6807;&#x9898;&#x3002;&#x8BF7;&#x52FF;&#x8D85;&#x8FC7;
+        20 &#x4E2A;&#x5B57;&#x7B26;&#x3002;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>payload</code>
+      </td>
+      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li>&#x70B9;&#x51FB;&#x6309;&#x94AE;, &#x53D1;&#x9001;&#x5230;Joinchat&#x7684;&#x6570;&#x636E;,
+            &#x76EE;&#x524D;&#x652F;&#x6301;&#x683C;&#x5F0F;&#x4E3A;:
+            <ul>
+              <li>block_id: &#x70B9;&#x51FB;&#x6309;&#x94AE;, &#x89E6;&#x53D1;&#x7684;block</li>
+              <li>flow_id: &#x70B9;&#x51FB;&#x6309;&#x94AE;, &#x89E6;&#x53D1;&#x7684;flow</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>## 文本消息
 
 ### **请求参数示例:**
 
-```text
+```javascript
 {
     "page_id":12345,
     "recipient":{
@@ -225,16 +258,14 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### **参数解释**
 
-* type: 值必须是button
-* template\_type: 值必须为button
-* text: UTF-8 编码文本，最多 640 个字符。文本显示在按钮上方
-* buttons: 显示为行动号召的一组[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)，包括 1-3 个按钮, 参见`按钮类型`模块
+* template\_type: 值必须为text
+* text: UTF-8 编码文本，最多 640 个字符。
 
 ## 菜单消息
 
 ### 请求参数示例:
 
-```text
+```javascript
 {
     "page_id":12345,
     "recipient":{
@@ -262,10 +293,14 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### 参数解释
 
-* template\_type: 值必须是button
-* template\_type: 值必须为button
-* text: UTF-8 编码文本，最多 640 个字符。文本显示在按钮上方
-* buttons: 数组&lt;button&gt; 显示为行动号召的一组[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)，包括 1-3 个按钮, 参见`按钮类型`模块
+#### `message` <a id="payload"></a>
+
+| 属性 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| `template_type` | 字符串 | 值必须为 `button` |
+| `text` | 字符串 | UTF-8 编码文本，最多 640 个字符。文本显示在按钮上方。 |
+| `buttons` | 阵列&lt;按钮&gt; | 显示为行动号召的一组[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)，包括 1-3 个按钮。 |
+| `sharable` | Boolean | _**可选。**_ 设置为 `true`，可为模板消息启用 Messenger 原生分享按钮。默认为 `false`。 |
 
 ![](../.gitbook/assets/image%20%28100%29.png)
 
@@ -273,7 +308,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### 请求参数示例:
 
-```text
+```javascript
 {
     "page_id":12345,
     "recipient":{
@@ -313,13 +348,26 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### 参数解释
 
-* template\_type: 值必须为generic
-* elements:  [`element`](https://developers.facebook.com/docs/messenger-platform/reference/template/generic/?translation#elements) 对象的数组，描述要发送的常规模板的实例。指定多个元素时，会发送可水平滚动的模板轮播。最多支持 10 个元素。
-  * title: 字符串 显示在模板中的标题。不超过 80 个字符。
-  * subtitle: 字符串  _**可选。**_ 显示在模板中的副标题。不超过 80 个字符。
-  * image\_url: 字符串  _**可选。**_ 显示在模板中的图片网址。
-  * default\_action: 对象  _**可选。**_ 用户轻触模板时执行的默认操作。接受与[网址按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/url-button)相同的属性，`title` 除外。
-  * buttons: 数组&lt;button&gt;  _**可选。**_ 要添加到模板中的[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)数组。每个元素最多支持 3 个按钮。
+#### `message` <a id="payload"></a>
+
+| 属性 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| `template_type` | 字符串 | 值必须为 `generic` |
+| `sharable` | Boolean | _**可选。**_ 设置为 `true`，可为模板消息启用 Messenger 原生分享按钮。默认为 `false`。 |
+| `image_aspect_ratio` | 字符串 | _**可选。**_ 呈现 `element.image_url`指定的图片时使用的宽高比。必须为 `horizontal` \(1.91:1\) 或 `square`\(1:1\)。默认为 `horizontal`。 |
+| `elements` | 数组&lt;[`element`](https://developers.facebook.com/docs/messenger-platform/reference/template/generic/?translation#elements)&gt; | [`element`](https://developers.facebook.com/docs/messenger-platform/reference/template/generic/?translation#elements) 对象的数组，描述要发送的常规模板的实例。指定多个元素时，会发送可水平滚动的模板轮播。最多支持 10 个元素。 |
+
+#### `message.elements` <a id="elements"></a>
+
+对于每一条消息，常规模板最多支持 10 个元素。除 `title` 之外，还必须至少设置一种属性。
+
+| 属性名称 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| `title` | 字符串 | 显示在模板中的标题。不超过 80 个字符。 |
+| `subtitle` | 字符串 | _**可选。**_ 显示在模板中的副标题。不超过 80 个字符。 |
+| `image_url` | 字符串 | _**可选。**_ 显示在模板中的图片网址。 |
+| `default_action` | 对象 | _**可选。**_ 用户轻触模板时执行的默认操作。接受与[网址按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/url-button)相同的属性，`title` 除外。 |
+| `buttons` | 数组&lt;[`button`](https://developers.facebook.com/docs/messenger-platform/reference/template/generic/?translation#button)&gt; | _**可选。**_ 要添加到模板中的[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)数组。每个元素最多支持 3 个按钮。 |
 
 ![](../.gitbook/assets/image%20%28102%29.png)
 
@@ -327,7 +375,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### 请求参数示例:
 
-```text
+```javascript
 {
     "page_id":12345,
     "recipient":{
@@ -400,28 +448,252 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### 参数解释
 
-* template\_type: 值必须为list
-* top\_element\_style: 字符串 _**可选。**_ 设置第一个列表项的格式。
+#### `message` <a id="payload"></a>
 
-  `compact`:呈现无格式的列表项。
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x5C5E;&#x6027;</th>
+      <th style="text-align:left">&#x7C7B;&#x578B;</th>
+      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>template_type</code>
+      </td>
+      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
+      <td style="text-align:left">&#x503C;&#x5FC5;&#x987B;&#x4E3A; <code>list</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>top_element_style</code>
+      </td>
+      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
+      <td style="text-align:left">
+        <p><em><b>&#x53EF;&#x9009;&#x3002;</b></em> &#x8BBE;&#x7F6E;&#x7B2C;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x9879;&#x7684;&#x683C;&#x5F0F;&#x3002;Messenger
+          &#x7F51;&#x9875;&#x5BA2;&#x6237;&#x7AEF;&#x76EE;&#x524D;&#x4EC5;&#x5448;&#x73B0; <code>compact</code> &#x683C;&#x5F0F;&#x3002;</p>
+        <p><code>compact</code>:&#x5448;&#x73B0;&#x65E0;&#x683C;&#x5F0F;&#x7684;&#x5217;&#x8868;&#x9879;&#x3002;</p>
+        <p><code>large</code>:&#x5C06;&#x7B2C;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x9879;&#x5448;&#x73B0;&#x4E3A;&#x5C01;&#x9762;&#x9879;&#x3002;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>buttons</code>
+      </td>
+      <td style="text-align:left">&#x4E00;&#x7EC4;&lt;<a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons">&#x6309;&#x94AE;</a>&gt;</td>
+      <td
+      style="text-align:left"><em><b>&#x53EF;&#x9009;&#x3002;</b></em> &#x663E;&#x793A;&#x5728;&#x5217;&#x8868;&#x5E95;&#x90E8;&#x7684;
+        <a
+        href="https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons">&#x6309;&#x94AE;</a>&#x3002;&#x6700;&#x591A;&#x652F;&#x6301; 1 &#x4E2A;&#x6309;&#x94AE;&#x3002;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>elements</code>
+      </td>
+      <td style="text-align:left">&#x4E00;&#x7EC4;&lt;<a href="https://developers.facebook.com/docs/messenger-platform/reference/template/list#elements">&#x5143;&#x7D20;</a>&gt;</td>
+      <td
+      style="text-align:left">
+        <p>&#x63CF;&#x8FF0;&#x5217;&#x8868;&#x4E2D;&#x5404;&#x9879;&#x76EE;&#x7684;&#x4E00;&#x7EC4;&#x5143;&#x7D20;&#x3002;
+          <br
+          />
+        </p>
+        <p>&#x8981;&#x6C42;&#x6700;&#x5C11; 2 &#x4E2A;&#x5143;&#x7D20;&#x3002;&#x6700;&#x591A;&#x652F;&#x6301;
+          4 &#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>sharable</code>
+      </td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left"><em><b>&#x53EF;&#x9009;&#x3002;</b></em> &#x8BBE;&#x7F6E;&#x4E3A; <code>true</code>&#xFF0C;&#x53EF;&#x4E3A;&#x6A21;&#x677F;&#x6D88;&#x606F;&#x542F;&#x7528;
+        Messenger &#x539F;&#x751F;&#x5206;&#x4EAB;&#x6309;&#x94AE;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code>&#x3002;</td>
+    </tr>
+  </tbody>
+</table>#### `message.elements` <a id="elements"></a>
 
-  `large`:将第一个列表项呈现为封面项。
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x5C5E;&#x6027;</th>
+      <th style="text-align:left">&#x7C7B;&#x578B;</th>
+      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>title</code>
+      </td>
+      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
+      <td style="text-align:left">
+        <p>&#x663E;&#x793A;&#x4E3A;&#x5217;&#x8868;&#x9879;&#x6807;&#x9898;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;
+          &#x4E0D;&#x8D85;&#x8FC7; 80 &#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x6807;&#x9898;&#x8DE8;&#x8D8A;&#x592A;&#x591A;&#x884C;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x622A;&#x65AD;&#x3002;</p>
+        <p>&#x5143;&#x7D20;&#x4E5F;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x8BBE;&#x7F6E; <code>image_url</code> &#x6216; <code>subtitle</code> &#x4E4B;&#x4E00;&#x3002;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>subtitle</code>
+      </td>
+      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
+      <td style="text-align:left">
+        <p><em><b>&#x53EF;&#x9009;&#x3002;</b></em> &#x663E;&#x793A;&#x4E3A;&#x5217;&#x8868;&#x9879;&#x526F;&#x6807;&#x9898;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4E0D;&#x8D85;&#x8FC7;
+          80 &#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x5982;&#x679C;&#x526F;&#x6807;&#x9898;&#x8DE8;&#x8D8A;&#x592A;&#x591A;&#x884C;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x622A;&#x65AD;&#x3002;</p>
+        <p>&#x5143;&#x7D20;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x8BBE;&#x7F6E; <code>image_url</code> &#x6216; <code>subtitle</code> &#x4E4B;&#x4E00;&#x3002;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>image_url</code>
+      </td>
+      <td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;</td>
+      <td style="text-align:left">
+        <p><em><b>&#x53EF;&#x9009;&#x3002;</b></em> &#x8981;&#x663E;&#x793A;&#x5728;&#x5217;&#x8868;&#x9879;&#x4E2D;&#x7684;&#x56FE;&#x7247;&#x7F51;&#x5740;&#x3002;</p>
+        <p>&#x5143;&#x7D20;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x8BBE;&#x7F6E; <code>image_url</code> &#x6216; <code>subtitle</code> &#x4E4B;&#x4E00;&#x3002;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>default_action</code>
+      </td>
+      <td style="text-align:left">&#x5BF9;&#x8C61;</td>
+      <td style="text-align:left">
+        <p><em><b>&#x53EF;&#x9009;&#x3002;</b></em><a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference/url-button#fields">&#x7F51;&#x5740;&#x6309;&#x94AE;</a>&#xFF0C;&#x6307;&#x5B9A;&#x7528;&#x6237;&#x8F7B;&#x89E6;&#x5217;&#x8868;&#x9879;&#x65F6;&#x8981;&#x6267;&#x884C;&#x7684;&#x9ED8;&#x8BA4;&#x64CD;&#x4F5C;&#x3002;</p>
+        <p>&#x4EC5;&#x5F53; <code>messenger_extensions</code> &#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A; <code>true</code> &#x65F6;&#x5141;&#x8BB8;&#x4F7F;&#x7528;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>buttons</code>
+      </td>
+      <td style="text-align:left">&#x4E00;&#x7EC4;&lt;<a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons">&#x6309;&#x94AE;</a>&gt;</td>
+      <td
+      style="text-align:left"><em><b>&#x53EF;&#x9009;&#x3002;</b></em> &#x8981;&#x663E;&#x793A;&#x5728;&#x5217;&#x8868;&#x9879;&#x4E2D;&#x7684;
+        <a
+        href="https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons">&#x6309;&#x94AE;</a>&#x3002;&#x6700;&#x591A;&#x652F;&#x6301; 1 &#x4E2A;&#x6309;&#x94AE;&#x3002;</td>
+    </tr>
+  </tbody>
+</table>![](../.gitbook/assets/image%20%28139%29.png)
 
-* buttons: 一组按钮,  _**可选。**_ 显示在列表底部的[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)。最多支持 1 个按钮
-* elements: 一组元素, 描述列表中各项目的一组元素。要求最少 2 个元素。最多支持 4 个元素
-  * title: 字符串  显示为列表项标题的字符串。 不超过 80 个字符。如果标题跨越太多行，则可能会被截断, 元素也必须至少设置 `image_url` 或 `subtitle` 之一。
-  * subtitle: 字符串 _**可选。**_ 显示为列表项副标题的字符串。不超过 80 个字符。如果副标题跨越太多行，则可能会被截断。
+## 回执消息
 
-    元素必须至少设置 `image_url` 或 `subtitle` 之一。
+### 请求参数示例:
 
-  * image\_url: 字符串  _**可选。**_ 要显示在列表项中的图片网址
+```javascript
+{
+    "page_id":12345,
+    "recipient":{
+        "uuid":"123456"
+    },
+    "message":{
+        "template_type":"receipt",
+        "recipient_name":"Stephane Crozatier",
+        "order_number":"12345678902",
+        "currency":"USD",
+        "payment_method":"Visa 2345",        
+        "order_url":"http://petersapparel.parseapp.com/order?order_id=123456",
+        "timestamp":"1428444852",         
+        "address":{
+          "street_1":"1 Hacker Way",
+          "street_2":"",
+          "city":"Menlo Park",
+          "postal_code":"94025",
+          "state":"CA",
+          "country":"US"
+        },
+        "summary":{
+          "subtotal":75.00,
+          "shipping_cost":4.95,
+          "total_tax":6.19,
+          "total_cost":56.14
+        },
+        "adjustments":[
+          {
+            "name":"New Customer Discount",
+            "amount":20
+          },
+          {
+            "name":"$10 Off Coupon",
+            "amount":10
+          }
+        ],
+        "elements":[
+          {
+            "title":"Classic White T-Shirt",
+            "subtitle":"100% Soft and Luxurious Cotton",
+            "quantity":2,
+            "price":50,
+            "currency":"USD",
+            "image_url":"http://petersapparel.parseapp.com/img/whiteshirt.png"
+          },
+          {
+            "title":"Classic Gray T-Shirt",
+            "subtitle":"100% Soft and Luxurious Cotton",
+            "quantity":1,
+            "price":25,
+            "currency":"USD",
+            "image_url":"http://petersapparel.parseapp.com/img/grayshirt.png"
+          }
+        ]
+      },
+	"tag":"ACCOUNT_UPDATE",
+	"delay": 3,
+}
+```
 
-    元素必须至少设置 `image_url` 或 `subtitle` 之一
+### 参数解释
 
-  * default\_action _**可选。**_[网址按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/url-button#fields)，指定用户轻触列表项时要执行的默认操作
-  * buttons: 一组按钮,  _**可选。**_ 要显示在列表项中的[按钮](https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons)。最多支持 1 个按钮。
+#### `message` <a id="payload"></a>
 
-![](../.gitbook/assets/image%20%28138%29.png)
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `template_type` | String | Value must be `receipt`. |
+| `sharable` | Boolean | _**Optional.**_ Set to `true` to enable the native share button in Messenger for the template message. Defaults to `false`. |
+| `recipient_name` | String | The recipient's name. |
+| `order_number` | String | The order number. Must be unique. |
+| `currency` | String | The currency of the payment. |
+| `payment_method` | String | The payment method used. Providing enough information for the customer to decipher which payment method and account they used is recommended. This can be a custom string, such as, "Visa 1234". |
+| `timestamp` | String | _**Optional.**_ Timestamp of the order in seconds. |
+| `elements` | Array&lt;[element](https://developers.facebook.com/docs/messenger-platform/reference/template/receipt#elements)&gt; | _**Optional.**_ Array of a maximum of 100 [`element`](https://developers.facebook.com/docs/messenger-platform/reference/template/receipt#elements) objects that describe items in the order. Sort order of the elements is not guaranteed. |
+| `address` | [`address`](https://developers.facebook.com/docs/messenger-platform/reference/template/receipt#address) object | _**Optional.**_ The shipping address of the order. |
+| `summary` | Object | The payment summary. See [`summary`](https://developers.facebook.com/docs/messenger-platform/reference/template/receipt#summary). |
+| `adjustments` | Array&lt;[`adjustment`](https://developers.facebook.com/docs/messenger-platform/reference/template/receipt#adjustment)&gt; | _**Optional.**_ An array of [payment](https://developers.facebook.com/docs/messenger-platform/reference/template/receipt#payment)objects that describe payment adjustments, such as discounts. |
+
+#### `message.address` <a id="address"></a>
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `street_1` | String | The street address, line 1. |
+| `street_2` | String | _**Optional.**_ The street address, line 2. |
+| `city` | String | The city name of the address. |
+| `postal_code` | String | The postal code of the address. |
+| `state` | String | The state abbreviation for U.S. addresses, or the region/province for non-U.S. addresses. |
+| `country` | String | The two-letter country abbreviation of the address. |
+
+#### `message.summary` <a id="summary"></a>
+
+The property values of the `summary` object should be valid, well-formatted decimal numbers, using '`.`' \(dot\) as the decimal separator. Please note that most currencies only accept up to 2 decimal places.
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `subtotal` | Number | _**Optional.**_ The sub-total of the order. |
+| `shipping_cost` | Number | _**Optional.**_ The shipping cost of the order. |
+| `total_tax` | Number | _**Optional.**_ The tax of the order. |
+| `total_cost` | Number | The total cost of the order, including sub-total, shipping, and tax. |
+
+#### `message.adjustments` <a id="adjustments"></a>
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `name` | String | Required if the `adjustments` array is set. Name of the adjustment. |
+| `amount` | Number | Required if the `adjustments` array is set. The amount of the adjustment. |
+
+#### `message.elements` <a id="elements"></a>
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `title` | String | The name to display for the item. |
+| `subtitle` | String | _**Optional.**_ The subtitle for the item, usually a brief item description. |
+| `quantity` | Number | _**Optional.**_ The quantity of the item purchased. |
+| `price` | Number | The price of the item. For free items, '0' is allowed. |
+| `currency` | String | _**Optional.**_ The currency of the item price. |
+| `image_url` | String | _**Optional.**_ The URL of an image to be displayed with the item. |
+
+![](../.gitbook/assets/image%20%28107%29.png)
 
 ## 消息标签
 
