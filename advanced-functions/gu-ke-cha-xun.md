@@ -20,13 +20,15 @@ JoinChat会为每一个机器人生成独一无二的私钥。JoinChat调取API�
 <?php
 // API管理中秘钥
 const API_SECRET  = 'xxxxx';
-// 获取请求头设置的签名, PHP会自动拼上HTTP_
-$src_sign = $_SERVER['HTTP_X_JOINCHAT_SIGNATURE'];
-// 获取请求参数
-$input = file_get_contents('php://input');
-// 对请求参数进行加密
+
+// 伪代码, 从请求头获取签名
+$src_sign = $request->header('x-joinchat-signature');
+
+// 伪代码, 获取请求参数, 字符串格式
+$input = $request->getContentRaw();
+
+// 对请求参数进行加密生成签名并对比header里的签名
 $result_sign = base64_encode(hash_hmac('sha256', $input, API_SECRET, true));
-// 对比加密后的签名, true 表示验证通过 false 表示验证错误
 $result = hash_equals($src_sign, $result_sign);
 
 var_dump($result);

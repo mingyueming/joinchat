@@ -6,7 +6,7 @@ description: 仪表盘是用户与机器人进行大量信息流转跟踪的显�
 
 仪表盘主要分为4个区域，分别是：Facebook主页昨日情况、用户整体情况、消息块整体情况、广播群发情况。
 
-![&#x4EEA;&#x8868;&#x76D8;](../.gitbook/assets/image%20%2830%29.png)
+![&#x4EEA;&#x8868;&#x76D8;](../.gitbook/assets/image%20%2831%29.png)
 
 ## Facebook主页昨日情况
 

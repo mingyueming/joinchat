@@ -4,7 +4,7 @@ description: 主要针对机器人的通用功能的设置
 
 # 基础设置
 
-![&#x8BBE;&#x7F6E;&#x754C;&#x9762;](../../.gitbook/assets/image%20%2889%29.png)
+![&#x8BBE;&#x7F6E;&#x754C;&#x9762;](../../.gitbook/assets/image%20%2891%29.png)
 
 ## 机器人描述
 
