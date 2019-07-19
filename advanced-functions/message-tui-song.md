@@ -58,64 +58,60 @@ $resp = $client->post('https://joinchat.ai/api/send_message', $params);
 
 ### 参数含义
 
-* page\_id: bot绑定的facebook主页id, 可在`设置-API`中查看
-* recipient: 发送者对象, 见发送者对象
-* message: 消息对象
-  * template\_type: 消息类型 
-    * text: 文本消息
-    * button: 菜单模板
-    * generic: 画册模板
-    * list: 列表模板
-    * receipt: 回执模板
-  * 其他字段: 字符串或者对象, 依赖于template\_type, 详情见消息类型文档
-* tag : 消息标签, 添加后消息不受24小时时间窗限制, 详情见消息标签模块
-* delay: 消息延时, 单位s, 连续发送消息时, 先后顺序不好控制, 可加入适当延时, 最大10s
+| 字段 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| page\_id | 字符串          | 机器人绑定的facebook主页id, 可在设置-API中查看 |
+| recipient | 对象 |  对消息接收人的说明。所有请求都必须包含下列任一属性：`id, phone, email, uuid`。参考`发送者对象recipient` |
+| message | 对象 | 消息对象, 有五种, 包括 文本消息, 菜单消息,  画册消息, 列表消息, 回执消息, 参考各类型消息文档 |
+| tag | 字符串 | 消息标签, 可以不受24小时发送时间窗限制, 参考消息标签文档 |
+| delay | int | 消息延时, 单位s, 连续发送消息时, 先后顺序不好控制, 可加入适当延时, 最大10 |
 
-### 发送者对象
+## 发送者对象recipient
 
-#### id
+> 开发者可以通过四种方式给用户发送messenger消息, 四者只能选一个
 
-消息接收人的facebook\_id, 可在用户管理中查看
+| 字段 | 类型 | 说明 |
+| :--- | :--- | :--- |
+| id | 字符串          | 消息接收人的facebook\_id, 可在用户管理中查看 |
+| phone | 字符串 | 消息接收人的phone, 可在用户管理中查看, 需用户绑定phone |
+| email | 字符串 | 消息接收人的email, 可在用户管理中查看, 需用户绑定email |
+| uuid | 字符串 | 见uuid介绍 |
 
-#### phone
+## recipient.uuid
 
-消息接收人的phone, 可在用户管理中查看, 需用户绑定phone
+### 介绍
 
-#### email
-
-消息接收人的email, 可在用户管理中查看, 需用户绑定email
-
-#### uuid 
-
-见uuid介绍
-
-### **使用uuid发送消息\(最为灵活\)**
-
-#### 介绍
-
-> uuid是JoinChat为开发者提供了一种非常灵活的消息发送方式,  开发者可以将自己网站的用户和uuid做关联, 当开发者想向自己网站用户发送 messenger 消息, 既可通过uuid请求JoinChat发送API, 从而将消息送达到facebook用户, 使用场景如下:
+> uuid是JoinChat为开发者提供了一种非常灵活的消息发送方式,  开发者可以将自己网站的用户和uuid做关联, 当开发者随时想向自己网站用户发送 messenger 消息, 既可通过和用户关联的uuid请求JoinChat发送API, 从而将消息送达到facebook用户, 使用场景如下:
 
 * 用户注册后, 给用户messenger推送积分信息, 并且发送优惠券
 * 用户购物车弃购后, 给用户messenger推送召回消息, 提高转化率
 * 用户下单后, 给用户推送订单回执
 
-#### 配置方法
+### 配置方法
 
 如何将自己网站的用户和uuid做关联呢? 三步即可
 
-* 登录JoinChat后台, 点击推广插件, 创建Send to Messenger插件或者优惠券插件;
+#### 创建插件
+
+登录JoinChat后台, 点击推广插件, 创建Send to Messenger插件或者优惠券插件;
 
 ![](../.gitbook/assets/image%20%2899%29.png)
 
-* 创建推广插件后, 点击SDK管理, 选择刚创建的插件, 启用后, 然后复制链接插码到自己的网站
+#### 配置SDK并安装代码
+
+创建推广插件后, 点击SDK管理, 选择刚创建的插件, 启用后, 然后复制链接插码到自己的网站
 
 ![](../.gitbook/assets/image%20%28155%29.png)
 
-* 开发者打开自己网站, 即可看到send to messenger插件
+开发者打开自己网站, 即可看到send to messenger插件
 
 ![](../.gitbook/assets/image%20%2850%29.png)
 
-* 当用户点击`Send to Messenger`插件, JoinChat会执行开发者设置的Javascript回调函数, 在回调函数中开发者可以将uuid和自己网站的用户id关联起来, 回调函数设置方式如下
+
+
+#### 编写Javascript回调函数
+
+当用户点击`Send to Messenger`插件, JoinChat会执行开发者设置的Javascript回调函数, 在回调函数中开发者可以将uuid和自己网站的用户id关联起来, 回调函数设置方式如下
 
 ```javascript
 <script type="text/javascript">
@@ -139,10 +135,11 @@ $resp = $client->post('https://joinchat.ai/api/send_message', $params);
         }
     }
 </script>
+
 <script src="https://joinchat.ai/js/analytics/sdk/15150c9d53ccc1eb21ffef1af5b6b184.js"></script>
 ```
 
-* 当开发者想向自己网站用户的`facebook messenger`推送消息时, 即可查找其uuid, 调用JoinChat发送API, 从而将消息推送到用户的messenger中
+开发者自己网站用户和uuid做了关联, 即可以随时向用户发送messenger消息
 
 ## 消息类型
 
@@ -178,7 +175,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 | 属性 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| `type` | 字符串 | 按钮的类型。必须是 `web_url`。 |
+| `type` | 字符串             | 按钮的类型。必须是 `web_url`。 |
 | `title` | 字符串 | 按钮标题。请勿超过 20 个字符。 |
 | `url` | 字符串 | 用户轻触按钮后，此网址将在移动浏览器中打开。需要在Joinchat管理端将该网址域名添加到白名单中 |
 | `webview_height_ratio` | 字符串 | _**可选。**_ WebView 的高度。有效值：`compact`、`tall`、`full`。默认为 `full`。 |
