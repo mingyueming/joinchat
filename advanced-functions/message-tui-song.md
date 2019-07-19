@@ -6,7 +6,7 @@ description: '开发人员可以调用Joinchat发送消息api, 向messenger用�
 
 ## 请求URL
 
-```http
+```php
 https://joinchat.ai/api/send_message
 ```
 
@@ -41,7 +41,7 @@ $resp = $client->post('https://joinchat.ai/api/send_message', $params);
 
 ### 参数示例
 
-```php
+```text
 {
     "page_id":12345,
     "recipient":{
@@ -117,7 +117,7 @@ $resp = $client->post('https://joinchat.ai/api/send_message', $params);
 
 * 当用户点击`Send to Messenger`插件, JoinChat会执行开发者设置的Javascript回调函数, 在回调函数中开发者可以将uuid和自己网站的用户id关联起来, 回调函数设置方式如下
 
-```javascript
+```text
 <script type="text/javascript">
     /**
      * 回调函数必须命名为joinchatSendToMessengerCallback
@@ -162,7 +162,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 #### 格式
 
-```javascript
+```text
 {
   "type": "web_url",
   "url": "<URL_TO_OPEN_IN_WEBVIEW>",
@@ -180,7 +180,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 #### 格式
 
-```javascript
+```text
 {
   "type":"postback",
   "title":"<BUTTON_TEXT>",
@@ -195,7 +195,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
   * block\_id: 点击按钮, 触发的block
   * flow\_id: 点击按钮, 触发的flow
 
-```javascript
+```text
 {
     "block_id" : "123",
     "flow_id" : "12"
@@ -208,7 +208,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### **请求参数示例:**
 
-```javascript
+```text
 {
     "page_id":12345,
     "recipient":{
@@ -234,7 +234,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### 请求参数示例:
 
-```javascript
+```text
 {
     "page_id":12345,
     "recipient":{
@@ -273,7 +273,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### 请求参数示例:
 
-```javascript
+```text
 {
     "page_id":12345,
     "recipient":{
@@ -327,7 +327,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 
 ### 请求参数示例:
 
-```javascript
+```text
 {
     "page_id":12345,
     "recipient":{
