@@ -12,7 +12,7 @@ https://joinchat.ai/api/send_message
 
 ## 请求示例和接口安全性验证
 
-JoinChat会为每个机器人生成独一无二的私钥。在调取Joinchat发送API时，开发人员需要用此密钥对整个请求参数提进行sha256、base64加密，并将签名加在请求Header头的`x_joinchat_signature`字段里。JoinChat会根据请求体和签名验证接口安全性,  注意不要泄露自己的私钥。开发者可以随时在后台`设置--API管理页面`更改自己的私钥
+JoinChat会为每个机器人生成独一无二的私钥。在调取Joinchat发送API时，开发人员需要用此密钥对整个请求参数提进行sha256、base64加密，并将签名加在请求Header头的`x-joinchat-signature`字段里。JoinChat会根据请求体和签名验证接口安全性,  注意不要泄露自己的私钥。开发者可以随时在后台`设置--API管理页面`更改自己的私钥
 
 下面是调用JoinChat发送API向用户发送消息的简单示例 ：
 
@@ -31,7 +31,7 @@ $sign = base64_encode(hash_hmac('sha256', $params, API_SECRET, true));
 $client = new httpClient();
 
 // 伪代码, 将签名添加到请求头中
-$client->setHeaders(['x_joinchat_signature' => $sign]);
+$client->setHeaders(['x-joinchat-signature' => $sign]);
 
 // 调用JoinChat发送API向messenger用户发送消息
 $resp = $client->post('https://joinchat.ai/api/send_message', $params);
