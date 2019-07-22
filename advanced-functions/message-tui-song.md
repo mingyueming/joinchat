@@ -177,7 +177,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 | :--- | :--- | :--- |
 | `type` | 字符串             | 按钮的类型。必须是 `web_url`。 |
 | `title` | 字符串 | 按钮标题。请勿超过 20 个字符。 |
-| `url` | 字符串 | 用户轻触按钮后，此网址将在移动浏览器中打开。需要在Joinchat管理端将该网址域名添加到白名单中 |
+| `url` | 字符串 | **用户轻触按钮后，此网址将在移动浏览器中打开。需要在Joinchat管理端将该网址域名添加到白名单中** |
 | `webview_height_ratio` | 字符串 | _**可选。**_ WebView 的高度。有效值：`compact`、`tall`、`full`。默认为 `full`。 |
 
 ### 回传按钮
@@ -276,11 +276,7 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
 			"type":"web_url",
 			"url":"https://www.messenger.com",
 			"title":"Visit Messenger"
-		  },
-		  {
-			...
-		  },
-		  {...}
+		  }
 		]
     },
 	"tag":"ACCOUNT_UPDATE",
@@ -312,31 +308,31 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
         "id":"123456"
     },
     "message":{
-		"template_type":"generic",
+        "template_type":"generic",
         "elements":[
-           {
-            "title":"Welcome!",
-            "image_url":"https://petersfancybrownhats.com/company_image.png",
-            "subtitle":"We have the right hat for everyone.",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://petersfancybrownhats.com/view?item=103",
-              "webview_height_ratio": "tall",
-            },
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://petersfancybrownhats.com",
-                "title":"View Website"
-              },{
-                "type":"postback",
-                "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-              }              
-            ]      
-          }
+            {
+                "title":"Welcome!",
+                "image_url":"https://petersfancybrownhats.com/company_image.png",
+                "subtitle":"We have the right hat for everyone.",
+                "default_action":{
+                    "type":"web_url",
+                    "url":"https://petersfancybrownhats.com/view?item=103",
+                    "webview_height_ratio":"tall"
+                },
+                "buttons":[
+                    {
+                        "type":"web_url",
+                        "url":"https://petersfancybrownhats.com",
+                        "title":"View Website"
+                    },
+                    {
+                        "type":"postback",
+                        "title":"Start Chatting",
+                        "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                    }
+                ]
+            }
         ]
-      }
     },
 	"tag":"ACCOUNT_UPDATE",
 	"delay": 3,
@@ -379,63 +375,63 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
         "id":"123456"
     },
     "message":{
-		"template_type": "list",
-        "top_element_style": "compact",
-        "elements": [
-          {
-            "title": "Classic T-Shirt Collection",
-            "subtitle": "See all our colors",
-            "image_url": "https://peterssendreceiveapp.ngrok.io/img/collection.png",          
-            "buttons": [
-              {
-                "title": "View",
-                "type": "web_url",
-                "url": "https://peterssendreceiveapp.ngrok.io/collection",
-                "messenger_extensions": true,
-                "webview_height_ratio": "tall",
-                "fallback_url": "https://peterssendreceiveapp.ngrok.io/"            
-              }
-            ]
-          },
-          {
-            "title": "Classic White T-Shirt",
-            "subtitle": "See all our colors",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://peterssendreceiveapp.ngrok.io/view?item=100",
-              "messenger_extensions": false,
-              "webview_height_ratio": "tall"
-            }
-          },
-          {
-            "title": "Classic Blue T-Shirt",
-            "image_url": "https://peterssendreceiveapp.ngrok.io/img/blue-t-shirt.png",
-            "subtitle": "100% Cotton, 200% Comfortable",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://peterssendreceiveapp.ngrok.io/view?item=101",
-              "messenger_extensions": true,
-              "webview_height_ratio": "tall",
-              "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+        "template_type":"list",
+        "top_element_style":"compact",
+        "elements":[
+            {
+                "title":"Classic T-Shirt Collection",
+                "subtitle":"See all our colors",
+                "image_url":"https://peterssendreceiveapp.ngrok.io/img/collection.png",
+                "buttons":[
+                    {
+                        "title":"View",
+                        "type":"web_url",
+                        "url":"https://joinchat.ai",
+                        "messenger_extensions":true,
+                        "webview_height_ratio":"tall",
+                        "fallback_url":"https://peterssendreceiveapp.ngrok.io/"
+                    }
+                ]
             },
-            "buttons": [
-              {
-                "title": "Shop Now",
-                "type": "web_url",
-                "url": "https://peterssendreceiveapp.ngrok.io/shop?item=101",
-                "messenger_extensions": true,
-                "webview_height_ratio": "tall",
-                "fallback_url": "https://peterssendreceiveapp.ngrok.io/"            
-              }
-            ]        
-          }
+            {
+                "title":"Classic White T-Shirt",
+                "subtitle":"See all our colors",
+                "default_action":{
+                    "type":"web_url",
+                    "url":"https://joinchat.ai",
+                    "messenger_extensions":false,
+                    "webview_height_ratio":"tall"
+                }
+            },
+            {
+                "title":"Classic Blue T-Shirt",
+                "image_url":"https://peterssendreceiveapp.ngrok.io/img/blue-t-shirt.png",
+                "subtitle":"100% Cotton, 200% Comfortable",
+                "default_action":{
+                    "type":"web_url",
+                    "url":"https://joinchat.ai",
+                    "messenger_extensions":true,
+                    "webview_height_ratio":"tall",
+                    "fallback_url":"https://peterssendreceiveapp.ngrok.io/"
+                },
+                "buttons":[
+                    {
+                        "title":"Shop Now",
+                        "type":"web_url",
+                        "url":"https://joinchat.ai",
+                        "messenger_extensions":true,
+                        "webview_height_ratio":"tall",
+                        "fallback_url":"https://peterssendreceiveapp.ngrok.io/"
+                    }
+                ]
+            }
         ],
-         "buttons": [
-          {
-            "title": "View More",
-            "type": "postback",
-            "payload": "payload"            
-          }
+        "buttons":[
+            {
+                "title":"View More",
+                "type":"postback",
+                "payload":"payload"
+            }
         ]
     },
 	"tag":"ACCOUNT_UPDATE",
