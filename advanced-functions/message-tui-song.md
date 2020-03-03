@@ -22,7 +22,9 @@ JoinChat会为每个机器人生成独一无二的私钥。在调取Joinchat发�
 const API_SECRET  = 'xxxxx';
 
 // 请求参数
-$params = '{"page_id":12345,"recipient":{"id":"123456"},"message":{"template_type":"text","text":"Hello World"},"tag":"ACCOUNT_UPDATE","delay":1}';
+$params = '{"page_id":12345,"recipient":{"id":"123456"},
+"message":{"template_type":"text","text":"Hello World"},
+"tag":"ACCOUNT_UPDATE","delay":1}';
 
 // 将参数和秘钥加密生成签名
 $sign = base64_encode(hash_hmac('sha256', $params, API_SECRET, true));
