@@ -17,7 +17,7 @@ description: >-
 
 在用户信息面板中，支持手动管理用户的数据包括添加标签、添加属性、修改属性等。
 
-![&#x7528;&#x6237;&#x6570;&#x636E;&#x7BA1;&#x7406;](../.gitbook/assets/image%20%28123%29.png)
+![&#x7528;&#x6237;&#x6570;&#x636E;&#x7BA1;&#x7406;](../.gitbook/assets/image%20%28124%29.png)
 
 ## 人工接入
 
@@ -35,7 +35,7 @@ description: >-
 
 可以看到人工呼叫用户列表中待处理的用户，当处理完用户问题后，开启机器人，则将该用户从人工呼叫用户中移除。
 
-![](../.gitbook/assets/image%20%28141%29.png)
+![](../.gitbook/assets/image%20%28142%29.png)
 
 进入人工模式后，如果5分钟内用户和页面双方都没有说话，则系统自动切换到机器人模式，JoinChat将继续对用户发送的文字，图片，视频等加以反应。
 
@@ -47,5 +47,5 @@ description: >-
 
 
 
-![&#x591A;&#x8BED;&#x8A00;&#x7FFB;&#x8BD1;](../.gitbook/assets/image%20%28126%29.png)
+![&#x591A;&#x8BED;&#x8A00;&#x7FFB;&#x8BD1;](../.gitbook/assets/image%20%28127%29.png)
 

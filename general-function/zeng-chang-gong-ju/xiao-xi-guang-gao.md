@@ -2,7 +2,7 @@
 description: '让您能够更有效的管理广告内容,实现Messenger广告投放与机器人的结合。'
 ---
 
-# 消息广告
+# 消息广告（已移至智能营销）
 
 在 Facebook Ads Manager 上编辑投放落地到 Messenger 的广告时，提供落地消息的代码与追踪数据代码。
 

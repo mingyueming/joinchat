@@ -22,9 +22,9 @@ description: 目前，JoinChat仅支持Facebook账号创建机器人，前提是
 
 ## 授予必要权限
 
-![&#x6388;&#x6743;&#x4E3B;&#x9875;](../.gitbook/assets/image%20%28153%29.png)
+![&#x6388;&#x6743;&#x4E3B;&#x9875;](../.gitbook/assets/image%20%28154%29.png)
 
 在这一步，您需要授权可能需要JoinChat管理的主页，我们默认勾选全部页面，若您在这里取消某个主页的选项，则在后面机器人与主页进行绑定时，则无法看到您取消勾选的主页。
 
-![&#x6388;&#x6743;&#x64CD;&#x4F5C;](../.gitbook/assets/image%20%28165%29.png)
+![&#x6388;&#x6743;&#x64CD;&#x4F5C;](../.gitbook/assets/image%20%28166%29.png)
 

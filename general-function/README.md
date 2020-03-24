@@ -10,7 +10,7 @@ description: 在这里，我们给大家介绍以下JoinChat的常用功能，�
 
 {% page-ref page="zi-dong-hui-fu/" %}
 
-{% page-ref page="guang-bo-qun-fa.md" %}
+{% page-ref page="zhi-neng-ying-xiao/guang-bo-qun-fa.md" %}
 
 {% page-ref page="yong-hu.md" %}
 

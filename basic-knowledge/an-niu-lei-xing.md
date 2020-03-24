@@ -18,9 +18,9 @@ description: >-
 
 您可以在用户轻触消息按钮时执行任意操作。例如，您可以展示产品列表，然后在回传中向用户以结构化消息的形式返回产品详情。可以选择新建一个消息或选择一个用户已经创建的消息。
 
-![&#x65B0;&#x5EFA;&#x6D88;&#x606F;](../.gitbook/assets/image%20%28157%29.png)
+![&#x65B0;&#x5EFA;&#x6D88;&#x606F;](../.gitbook/assets/image%20%28158%29.png)
 
-![&#x9009;&#x62E9;&#x5DF2;&#x6709;&#x6D88;&#x606F;](../.gitbook/assets/image%20%28127%29.png)
+![&#x9009;&#x62E9;&#x5DF2;&#x6709;&#x6D88;&#x606F;](../.gitbook/assets/image%20%28128%29.png)
 
 ## 登陆按钮
 
@@ -52,7 +52,7 @@ description: >-
 
 用户实际在Messenger中点击这个电话按钮，会直接拨打对应的电话号码。
 
-![&#x7535;&#x8BDD;&#x6309;&#x94AE;](../.gitbook/assets/image%20%28142%29.png)
+![&#x7535;&#x8BDD;&#x6309;&#x94AE;](../.gitbook/assets/image%20%28143%29.png)
 
 轻触呼叫按钮即可拨打手机号。手机号的格式应为 `+<COUNTRY_CODE><PHONE_NUMBER>`，例如 `+15105559999`
 

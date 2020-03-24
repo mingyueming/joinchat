@@ -32,7 +32,7 @@
 
 5-确保启用开关已经打开
 
-![&#x793A;&#x4F8B;&#x56FE;](../../.gitbook/assets/image%20%28137%29.png)
+![&#x793A;&#x4F8B;&#x56FE;](../../.gitbook/assets/image%20%28138%29.png)
 
 场景二：响应用户输入的咨询产品价格
 
