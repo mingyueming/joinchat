@@ -1,5 +1,5 @@
 ---
-description: 目前，JoinChat仅支持Facebook账号创建机器人，前提是您要有一个属于自己的Facebook商家主页（Fans Page）。
+description: 目前，JoinChat仅支持Facebook账号创建机器人，前提是您要有一个属于自己的Facebook粉丝页（Fans Page）。
 ---
 
 # 授权登陆

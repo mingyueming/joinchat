@@ -15,7 +15,7 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 ![&#x6587;&#x672C;&#x5361;&#x7247;](../.gitbook/assets/image%20%2825%29.png)
 
-消息块方便用户快速设定一次性回复给用户多条组合在一起的内容，比如 文本+图片、文本+视频等，使得您在[智能回复](../general-function/zi-dong-hui-fu/)和[广播群发](../general-function/zhi-neng-ying-xiao/guang-bo-qun-fa.md)等功能中使用。
+消息块方便用户快速设定一次性回复给用户多条组合在一起的内容，比如 文本+图片、文本+视频等，使得您在[智能回复]()和[广播群发](../zhi-neng-ying-xiao/guang-bo-qun-fa.md)等功能中使用。
 
 ## 动作块
 
@@ -29,7 +29,7 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 ![&#x6DFB;&#x52A0;&#x6807;&#x7B7E;](../.gitbook/assets/image%20%2878%29.png)
 
-管理全部标签则在设置-[属性/标签](../general-function/she-zhi/shu-xing-biao-qian.md)中进行。
+管理全部标签则在设置-[属性/标签](../she-zhi/ji-chu-she-zhi/shu-xing-biao-qian.md)中进行。
 
 ### 订阅计划和取消订阅计划
 
@@ -50,7 +50,7 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 | 日期类型 | 如生日 |
 | 时间类型 | 如用餐时间 |
 
-管理全部属性则在设置-[属性/标签](../general-function/she-zhi/shu-xing-biao-qian.md)中进行。
+管理全部属性则在设置-[属性/标签](../she-zhi/ji-chu-she-zhi/shu-xing-biao-qian.md)中进行。
 
 ### 呼叫人工客服
 
@@ -86,7 +86,7 @@ JoinChat内置了谷歌翻译功能，可以通过识别用户的语言将配置
 
 ## 随机器
 
-随机器是JoinChat系统的高级进阶功能，随机器实现了多分支业务流，它使得智能回复内容不再单一化和固定化，更加贴合实际应用，使业务Flow更加实用及智能化。目前随机器支持分支数量至少2条，最多10条。
+随机器是JoinChat系统的高级进阶功能，随机器实现了多分支业务流，它使得智能回复内容不再单一化和固定化，更加贴合实际应用，使业务更加趣味化、人性化及智能化。目前随机器支持分支数量至少2条，最多10条。
 
 ![&#x968F;&#x673A;&#x5668;&#x6548;&#x679C;&#x56FE;](../.gitbook/assets/sui-ji-qi.png)
 
@@ -98,7 +98,7 @@ JoinChat内置了谷歌翻译功能，可以通过识别用户的语言将配置
 
 ![&#x6D88;&#x606F;&#x6D41;](../.gitbook/assets/image%20%2821%29.png)
 
-我们在创建[固定菜单](../general-function/zi-dong-hui-fu/gu-ding-cai-dan.md)中的每一个按钮、[欢迎回复](../general-function/zi-dong-hui-fu/huan-ying-hui-fu.md)、[默认回复](../general-function/zi-dong-hui-fu/wei-zhi-hui-fu.md)、每一条[关键词回复](../general-function/zi-dong-hui-fu/ai-hui-fu.md)、每一条[计划回复](../general-function/zi-dong-hui-fu/ji-hua-hui-fu.md)都视为一个独立的消息流。为了便于内容的区分及管理，可以在[内容管理](../general-function/)中创建一个新的消息流，同时进行消息流的管理。
+我们在创建[固定菜单](../general-function/gu-ding-cai-dan.md)中的每一个按钮、[欢迎回复](../she-zhi/ji-chu-she-zhi/huan-ying-hui-fu.md)、[默认回复](../she-zhi/ji-chu-she-zhi/wei-zhi-hui-fu.md)、每一条[关键词回复](../general-function/ai-hui-fu.md)、每一条[计划回复](../general-function/ji-hua-hui-fu.md)都视为一个独立的消息流。为了便于内容的区分及管理，可以在[内容管理](../general-function/)中创建一个新的消息流，同时进行消息流的管理。
 
 
 

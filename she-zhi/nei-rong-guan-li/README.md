@@ -22,7 +22,7 @@ description: 我们所有和用户进行互动的统称为内容，包括消息�
 
 管理了我们所有上传过的视频
 
-{% page-ref page="xiao-xi-guan-li.md" %}
+{% page-ref page="../../general-function/xiao-xi-guan-li/" %}
 
 {% page-ref page="tu-wen-guan-li-1.md" %}
 

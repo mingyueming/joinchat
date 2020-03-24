@@ -5,10 +5,10 @@ description: 「计划回复」是一项功能，允许给您的用户通过不�
 # 计划回复
 
 {% hint style="warning" %}
-请注意，相同的计划用户只能收到一次。如果希望用户可以从头再次收到该计划中的消息，您需要先给用户添加[取消订阅计划](../../basic-knowledge/zu-cheng-jie-gou.md#ding-yue-xu-lie-he-qu-xiao-ding-yue-xu-lie)动作，然后再次添加[订阅计划](../../basic-knowledge/zu-cheng-jie-gou.md#ding-yue-xu-lie-he-qu-xiao-ding-yue-xu-lie)动作。 
+请注意，相同的计划用户只能收到一次。如果希望用户可以从头再次收到该计划中的消息，您需要先给用户添加[取消订阅计划](../basic-knowledge/zu-cheng-jie-gou.md#ding-yue-xu-lie-he-qu-xiao-ding-yue-xu-lie)动作，然后再次添加[订阅计划](../basic-knowledge/zu-cheng-jie-gou.md#ding-yue-xu-lie-he-qu-xiao-ding-yue-xu-lie)动作。 
 {% endhint %}
 
-![&#x65B0;&#x5EFA;&#x8BA1;&#x5212;](../../.gitbook/assets/image%20%285%29.png)
+![&#x65B0;&#x5EFA;&#x8BA1;&#x5212;](../.gitbook/assets/image%20%285%29.png)
 
 如何给用户添加计划？
 
@@ -20,7 +20,7 @@ description: 「计划回复」是一项功能，允许给您的用户通过不�
 >
 > 用户与机器人互动后（例如：给您的机器人发消息，或通过您网站上的 Messenger 插件进行互动）后 24 小时内，您可以通过机器人发消息给该用户。 24 小时后，您仅可再向用户发送一条消息以便跟进对话，直至用户发起下次互动。24 小时期限过后，只能发送已获批准的模板和标签。不得将消息模板或标签用于非预期用途。
 
-![&#x6D88;&#x606F;&#x6807;&#x7B7E;](../../.gitbook/assets/image%20%2835%29.png)
+![&#x6D88;&#x606F;&#x6807;&#x7B7E;](../.gitbook/assets/image%20%2835%29.png)
 
 请注意，消息标签仅用于发送非推广内容。
 
