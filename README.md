@@ -1,3 +1,7 @@
+---
+description: 我们将在这里为您介绍JoinChat的使用方法，让您快速上手，通过机器人与您的客户实现亲密接触...
+---
+
 # JoinChat用户手册
 
 ## JoinChat中文用户手册目录
