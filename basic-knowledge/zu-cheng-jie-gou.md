@@ -1,6 +1,6 @@
 ---
 description: >-
-  Messenger机器人发送给用户的，我们统称为内容（Block），在这里我们将内容分为三类：消息块（Message）、动作块（Action）和消息流（Flows）「消息流是由‘消息块’和‘动作块’构成」。
+  Messenger机器人发送给用户的，我们统称为内容（Block），在这里我们将内容分为四类：消息块（Message）、动作块（Action）、随机器（Randomizer）和消息流（Flows）「消息流是由‘消息块’、‘动作块’和‘随机器’构成」。
 ---
 
 # 组成结构
@@ -15,7 +15,7 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 ![&#x6587;&#x672C;&#x5361;&#x7247;](../.gitbook/assets/image%20%2825%29.png)
 
-消息块方便用户快速设定一次性回复给用户多条组合在一起的内容，比如 文本+图片、文本+视频等，使得您在[智能回复]()和[广播群发](../zhi-neng-ying-xiao/guang-bo-qun-fa.md)等功能中使用。
+消息块方便用户快速设定一次性回复给用户多条组合在一起的内容，比如 文本+图片、文本+视频等，使得您在[智能客服](https://app.gitbook.com/@joinchat/s/project/~/drafts/-M3EougYE79n0hgYbUR4/general-function)和[广播群发](../zhi-neng-ying-xiao/guang-bo-qun-fa.md)等功能中使用。
 
 ## 动作块
 
@@ -31,11 +31,7 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 管理全部标签则在设置-[属性/标签](../she-zhi/ji-chu-she-zhi/shu-xing-biao-qian.md)中进行。
 
-### 订阅计划和取消订阅计划
-
-当用户触发了添加该动作的按钮后，机器人会自动推送一系列消息。例如询问用户是否需要店铺动态时，当用户点击“同意”后，您可以在“同意”按钮下关联店铺的动态系列消息。
-
-![&#x8BA2;&#x9605;&#x5E8F;&#x5217;](../.gitbook/assets/image%20%2852%29.png)
+### ~~~~
 
 ### 设置用户属性和清除用户属性
 
@@ -86,9 +82,13 @@ JoinChat内置了谷歌翻译功能，可以通过识别用户的语言将配置
 
 ## 随机器
 
-随机器是JoinChat系统的高级进阶功能，随机器实现了多分支业务流，它使得智能回复内容不再单一化和固定化，更加贴合实际应用，使业务更加趣味化、人性化及智能化。目前随机器支持分支数量至少2条，最多10条。
+随机器是JoinChat系统的高级进阶功能，随机器实现了多分支业务流，它使得智能回复内容不再单一化和固定化，更加贴合实际应用，使业务更加趣味化、人性化及智能化。
 
 ![&#x968F;&#x673A;&#x5668;&#x6548;&#x679C;&#x56FE;](../.gitbook/assets/sui-ji-qi.png)
+
+目前随机器支持分支数量至少2条，最多10条。所有分支值之和必须等于100%，每个分支回复内容可根据需求选择消息块或动作或随机器。
+
+![&#x968F;&#x673A;&#x5668;&#x521B;&#x5EFA;&#x754C;&#x9762;](../.gitbook/assets/sui-ji-qi-fen-zhi-tu-.png)
 
 ## 消息流
 
@@ -98,7 +98,7 @@ JoinChat内置了谷歌翻译功能，可以通过识别用户的语言将配置
 
 ![&#x6D88;&#x606F;&#x6D41;](../.gitbook/assets/image%20%2821%29.png)
 
-我们在创建[固定菜单](../general-function/gu-ding-cai-dan.md)中的每一个按钮、[欢迎回复](../she-zhi/ji-chu-she-zhi/huan-ying-hui-fu.md)、[默认回复](../she-zhi/ji-chu-she-zhi/wei-zhi-hui-fu.md)、每一条[关键词回复](../general-function/ai-hui-fu.md)、每一条[计划回复](../general-function/ji-hua-hui-fu.md)都视为一个独立的消息流。为了便于内容的区分及管理，可以在[内容管理](../general-function/)中创建一个新的消息流，同时进行消息流的管理。
+我们在创建[固定菜单](../general-function/gu-ding-cai-dan.md)中的每一个按钮、[欢迎回复](../she-zhi/ji-chu-she-zhi/huan-ying-hui-fu.md)、[默认回复](../she-zhi/ji-chu-she-zhi/wei-zhi-hui-fu.md)、每一条[关键词回复](../general-function/ai-hui-fu.md)、每一条[计划回复]()都视为一个独立的消息流。为了便于内容的区分及管理，可以在[内容管理](../general-function/)中创建一个新的消息流，同时进行消息流的管理。
 
 
 

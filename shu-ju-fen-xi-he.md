@@ -35,7 +35,7 @@ description: 数据分析，用于帮助您更好的了解机器人运营情况�
 | 新增人数 | 昨日与机器人新互动过的人数 |
 | 总用户数 | 历史与机器人互动过的独立人数 |
 
-可以通过数据分析-[用户分析]()中查看用户的详细数据。
+可以通过数据分析-[用户分析](https://app.gitbook.com/@joinchat/s/project/~/drafts/-M3EougYE79n0hgYbUR4/shu-ju-fen-xi-he)中查看用户的详细数据。
 
 ### 内容块整体情况
 
@@ -46,13 +46,15 @@ description: 数据分析，用于帮助您更好的了解机器人运营情况�
 | 接收消息数量 | 昨日机器人收到用户发送的独立消息 |
 | 发送消息数量 | 昨日机器人给用户推送的全部消息数 |
 
-可以通过数据分析-[内容分析]()中查看内容交互的详细数据。
+可以通过数据分析-[内容分析](https://app.gitbook.com/@joinchat/s/project/~/drafts/-M3EougYE79n0hgYbUR4/shu-ju-fen-xi-he)中查看内容交互的详细数据。
 
 ### 广播群发情况
 
 广播群发状况主要统计了最近机器人5次广播任务的状态，主要包含各广播任务的创建时间、内容块名称、发送情况及发送状态。
 
 可以通过[广播群发](zhi-neng-ying-xiao/guang-bo-qun-fa.md)中查看历史广播任务的数据及详情。
+
+![&#x5E7F;&#x64AD;&#x7FA4;&#x53D1;&#x60C5;&#x51B5;](.gitbook/assets/guang-bo-qun-fa-qing-kuang-.png)
 
 ## 用户分析
 
@@ -80,9 +82,9 @@ description: 数据分析，用于帮助您更好的了解机器人运营情况�
 
 ### 用户属性
 
-用户属性主要统计了用户群体性别分布及国家/地区分布：
+用户属性主要统计了用户群体性别分布、语言分布、时区分布及互动排行榜：
 
-![&#x7528;&#x6237;&#x5C5E;&#x6027;](.gitbook/assets/image%20%2893%29.png)
+![&#x7528;&#x6237;&#x5C5E;&#x6027;](.gitbook/assets/yong-hu-shu-xing-.png)
 
 ## 内容分析
 
@@ -112,13 +114,7 @@ description: 数据分析，用于帮助您更好的了解机器人运营情况�
 
 触发详情中可以选择查看在某一时间范围内消息块/动作块触发次数排序情况，支持下载为Excel，用于分析用户在特定时间内，触发次数最多的是哪些内容块。
 
-![&#x89E6;&#x53D1;&#x8BE6;&#x60C5;](.gitbook/assets/image%20%28160%29.png)
+![&#x5185;&#x5BB9;&#x6392;&#x884C;&#x699C;](.gitbook/assets/shu-ju-fen-xi-nei-rong-pai-hang-bang-lie-biao-4.png)
 
-### 菜单详情
-
-菜单详情用于展示您设置[固定菜单](general-function/gu-ding-cai-dan.md)所点击的次数，方便您了解配置的固定菜单对用户的使用数据。请注意，固定菜单一旦修改，点击次数将重新计算。
-
-![&#x56FA;&#x5B9A;&#x83DC;&#x5355;](.gitbook/assets/image%20%2841%29.png)
-
-
+~~~~
 

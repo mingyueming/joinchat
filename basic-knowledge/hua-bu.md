@@ -17,7 +17,7 @@ description: >-
 
 在画布上有两种方式可以快速创建消息块或动作快，通过画布右上角快速创建按钮和从按钮的灰色消息连接点引出并单击鼠标左键进行快速创建。
 
-![&#x65B0;&#x5EFA;&#x6309;&#x94AE;](../.gitbook/assets/image%20%2816%29.png)
+![&#x65B0;&#x5EFA;&#x6309;&#x94AE;](../.gitbook/assets/dui-hua-chang-jing-zhu-yao-gou-cheng-bu-fen-1.png)
 
 ![&#x8FDE;&#x63A5;&#x70B9;&#x5FEB;&#x901F;&#x521B;&#x5EFA;](../.gitbook/assets/image%20%2839%29.png)
 

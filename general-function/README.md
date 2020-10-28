@@ -6,15 +6,11 @@ description: 机器人与用户进行交互主要有两种形式：一种是用�
 
 在JoinChat的使用过程中，我们把用户可以主动触发机器人预置消息的入口全部放在“智能回复”功能模块中，该模块也是机器人对话交流的配置核心。如何将这些入口消息配置的更加科学、有趣，则决定了用户对机器人的好感度和用户粘度。
 
-{% page-ref page="../zhi-neng-ying-xiao/guang-bo-qun-fa.md" %}
+{% page-ref page="gu-ding-cai-dan.md" %}
 
-{% page-ref page="../she-zhi/yong-hu.md" %}
+{% page-ref page="ai-hui-fu.md" %}
+
+{% page-ref page="xiao-xi-guan-li.md" %}
 
 {% page-ref page="ren-gong-ke-fu.md" %}
-
-{% page-ref page="../she-zhi/nei-rong-guan-li/" %}
-
-{% page-ref page="../she-zhi/" %}
-
-
 
