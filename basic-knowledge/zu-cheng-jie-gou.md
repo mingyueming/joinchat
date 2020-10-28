@@ -92,7 +92,7 @@ JoinChat内置了谷歌翻译功能，可以通过识别用户的语言将配置
 
 ## 消息流
 
-消息流是由[消息块](zu-cheng-jie-gou.md#xiao-xi-kuai)、~~和~~[动作块](zu-cheng-jie-gou.md#dong-zuo-kuai)和_**随机器**_按照运营人员引导用户进行交互体验的内容集合，作为某个完整对话情景的集合体，每个消息块和动作块都是通过按钮进行逻辑关联。
+消息流是由[消息块](zu-cheng-jie-gou.md#xiao-xi-kuai)、~~和~~[动作块](zu-cheng-jie-gou.md#dong-zuo-kuai)和[随机器](https://app.gitbook.com/@joinchat/s/project/~/drafts/-M3EVJufs5SJjkSA9_LC/basic-knowledge/zu-cheng-jie-gou#sui-ji-qi)按照运营人员引导用户进行交互体验的内容集合，作为某个完整对话情景的集合体，每个消息块和动作块都是通过按钮进行逻辑关联。
 
 消息流中，有一个特别的标识“起始点“，作为整个消息流中的第一个消息块，在触发该消息流时，机器人会自动推送带有“起始点“标识的消息块。同时，您可以拖动“起始点“用于变更触发的第一个消息块。
 
