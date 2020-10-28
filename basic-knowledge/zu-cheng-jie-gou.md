@@ -1,6 +1,6 @@
 ---
 description: >-
-  Messenger机器人发送给用户的，我们统称为内容（Block），在这里我们将内容分为四类：消息块（Message）、动作块（Action）、随机器（Randomizer）和消息流（Flows）「消息流是由‘消息块’、‘动作块’和‘随机器’构成」。
+  Messenger机器人给用户所发送的我们统称为内容（Block），在这里我们将内容分为四类：消息块（Message）、动作块（Action）、随机器（Randomizer）和消息流（Flows）「消息流是由‘消息块’、‘动作块’和‘随机器’构成」。
 ---
 
 # 组成结构
@@ -15,23 +15,23 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 ![&#x6587;&#x672C;&#x5361;&#x7247;](../.gitbook/assets/image%20%2825%29.png)
 
-消息块方便用户快速设定一次性回复给用户多条组合在一起的内容，比如 文本+图片、文本+视频等，使得您在[智能客服](https://app.gitbook.com/@joinchat/s/project/~/drafts/-M3EougYE79n0hgYbUR4/general-function)和[广播群发](../zhi-neng-ying-xiao/guang-bo-qun-fa.md)等功能中使用。
+消息块方便编辑一个多条组合在一起的内容，比如 文本+图片、文本+视频等，使得您在[智能客服](https://app.gitbook.com/@joinchat/s/project/~/drafts/-M3EougYE79n0hgYbUR4/general-function)和[广播群发](../zhi-neng-ying-xiao/guang-bo-qun-fa.md)等模块中使用。
 
 ## 动作块
 
 您可以通过给任何按钮添加一个动作，用于完成机器人自动触发的特定行为：
 
-![&#x52A8;&#x4F5C;&#x5217;&#x8868;&#x548C;&#x52A8;&#x4F5C;&#x5757;](../.gitbook/assets/image%20%2837%29.png)
+![&#x52A8;&#x4F5C;&#x5217;&#x8868;&#x4E0E;&#x52A8;&#x4F5C;&#x5757;](../.gitbook/assets/image%20%28176%29.png)
 
 ### 添加标签和取消标签
 
 通过用户的行为认知，给用户赋予特定的标识，可以帮助您丰富用户画像，更好地划分用户群。
 
-![&#x6DFB;&#x52A0;&#x6807;&#x7B7E;](../.gitbook/assets/image%20%2878%29.png)
+![&#x521B;&#x5EFA;&#x6807;&#x7B7E;](../.gitbook/assets/image%20%28175%29.png)
 
-管理全部标签则在设置-[属性/标签](../she-zhi/ji-chu-she-zhi/shu-xing-biao-qian.md)中进行。
+使用场景：如，当用户点击查看某一件商品更多的介绍内容时，希望给用户打上一个“对X商品感兴趣“的标签。
 
-### ~~~~
+管理全部标签则在[用户管理](../she-zhi/yong-hu.md)中进行。
 
 ### 设置用户属性和清除用户属性
 
@@ -46,13 +46,13 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 | 日期类型 | 如生日 |
 | 时间类型 | 如用餐时间 |
 
-管理全部属性则在设置-[属性/标签](../she-zhi/ji-chu-she-zhi/shu-xing-biao-qian.md)中进行。
+管理全部属性则在[用户管理](../she-zhi/yong-hu.md)中进行。
 
 ### 呼叫人工客服
 
-该动作用于用户点击特定按钮后，由人工来继续服务以达到更好的效果。
+![&#x547C;&#x53EB;&#x4EBA;&#x5DE5;&#x5BA2;&#x670D;](../.gitbook/assets/image%20%28169%29.png)
 
-![&#x547C;&#x53EB;&#x4EBA;&#x5DE5;&#x5BA2;&#x670D;](../.gitbook/assets/image%20%28163%29.png)
+该动作用于用户点击特定按钮后，由人工来继续服务以达到更好的效果。
 
 ### 订阅机器人和取消订阅机器人
 
@@ -64,11 +64,13 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 该功能为电商高级工具，为用户提供便捷的途径进行订单查询。使用该功能前需确保您已经完成店铺绑定，具体使用说明可见[顾客查询订单&包裹](../advanced-functions/gu-ke-cha-xun.md#gu-ke-cha-xun-ding-dan-bao-guo-zhuang-tai)。
 
+仅在安装BoomCart应用后才可使用该动作。
+
 ![&#x8BA2;&#x5355;&#x67E5;&#x8BE2;](../.gitbook/assets/image%20%2863%29.png)
 
 ### 开启/关闭翻译
 
-JoinChat内置了谷歌翻译功能，可以通过识别用户的语言将配置的内容翻译成用户的语言。
+JoinChat内置了谷歌翻译功能，可以通过识别用户facebook设置的常用语言，并将机器人发送的文本类消息自动翻译成用户的常用语言。
 
 ![&#x7FFB;&#x8BD1;&#x52A8;&#x4F5C;](../.gitbook/assets/image%20%2812%29.png)
 
@@ -92,13 +94,13 @@ JoinChat内置了谷歌翻译功能，可以通过识别用户的语言将配置
 
 ## 消息流
 
-消息流是由[消息块](zu-cheng-jie-gou.md#xiao-xi-kuai)、~~和~~[动作块](zu-cheng-jie-gou.md#dong-zuo-kuai)和[随机器](https://app.gitbook.com/@joinchat/s/project/~/drafts/-M3EVJufs5SJjkSA9_LC/basic-knowledge/zu-cheng-jie-gou#sui-ji-qi)按照运营人员引导用户进行交互体验的内容集合，作为某个完整对话情景的集合体，每个消息块和动作块都是通过按钮进行逻辑关联。
+消息流是由[消息块](zu-cheng-jie-gou.md#xiao-xi-kuai)、[动作块](zu-cheng-jie-gou.md#dong-zuo-kuai)和[随机器](https://app.gitbook.com/@joinchat/s/project/~/drafts/-M3EVJufs5SJjkSA9_LC/basic-knowledge/zu-cheng-jie-gou#sui-ji-qi)按照运营人员引导用户进行交互体验的内容集合，作为某个完整对话情景的集合体，每个消息块和动作块都是通过按钮进行逻辑关联。
 
 消息流中，有一个特别的标识“起始点“，作为整个消息流中的第一个消息块，在触发该消息流时，机器人会自动推送带有“起始点“标识的消息块。同时，您可以拖动“起始点“用于变更触发的第一个消息块。
 
-![&#x6D88;&#x606F;&#x6D41;](../.gitbook/assets/image%20%2821%29.png)
+![&#x6D88;&#x606F;&#x6D41;](../.gitbook/assets/image%20%28171%29.png)
 
-我们在创建[固定菜单](../general-function/gu-ding-cai-dan.md)中的每一个按钮、[欢迎回复](../she-zhi/ji-chu-she-zhi/huan-ying-hui-fu.md)、[默认回复](../she-zhi/ji-chu-she-zhi/wei-zhi-hui-fu.md)、每一条[关键词回复](../general-function/ai-hui-fu.md)、每一条[计划回复]()都视为一个独立的消息流。为了便于内容的区分及管理，可以在[内容管理](../general-function/)中创建一个新的消息流，同时进行消息流的管理。
+我们在创建[固定菜单](../general-function/gu-ding-cai-dan.md)中的每一个按钮、[欢迎回复](../she-zhi/ji-chu-she-zhi/huan-ying-hui-fu.md)、[默认回复](../she-zhi/ji-chu-she-zhi/wei-zhi-hui-fu.md)、每一条[关键词回复](../general-function/ai-hui-fu.md)都视为一个独立的消息流。为了便于内容的区分及管理，可以在[对话场景](../general-function/xiao-xi-guan-li.md)中创建一个新的消息流，同时进行消息流的管理。
 
 
 

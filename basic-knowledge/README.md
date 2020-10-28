@@ -1,5 +1,5 @@
 ---
-description: 在这一部分，我们先给您介绍一下JoinChat基本常识。
+description: 在这一部分，我们给您介绍一下JoinChat基本概念。
 ---
 
 # 基础知识
