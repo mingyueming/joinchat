@@ -103,7 +103,7 @@ $resp = $client->post('https://joinchat.ai/api/send_message', $params);
 
 创建推广插件后, 点击SDK管理, 选择刚创建的插件, 启用后, 然后复制链接插码到自己的网站
 
-![](../.gitbook/assets/image%20%28156%29.png)
+![](../.gitbook/assets/image%20%28155%29.png)
 
 开发者打开自己网站, 即可看到send to messenger插件
 
@@ -236,7 +236,9 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
       </td>
     </tr>
   </tbody>
-</table>## 文本消息
+</table>
+
+## 文本消息
 
 ### **请求参数示例:**
 
@@ -503,7 +505,9 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
         Messenger &#x539F;&#x751F;&#x5206;&#x4EAB;&#x6309;&#x94AE;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; <code>false</code>&#x3002;</td>
     </tr>
   </tbody>
-</table>#### `message.elements` <a id="elements"></a>
+</table>
+
+#### `message.elements` <a id="elements"></a>
 
 <table>
   <thead>
@@ -562,7 +566,9 @@ joinchat支持用户发送文本消息, 菜单消息, 画册消息, 列表消息
         href="https://developers.facebook.com/docs/messenger-platform/send-api-reference/buttons">&#x6309;&#x94AE;</a>&#x3002;&#x6700;&#x591A;&#x652F;&#x6301; 1 &#x4E2A;&#x6309;&#x94AE;&#x3002;</td>
     </tr>
   </tbody>
-</table>![](../.gitbook/assets/image%20%28140%29.png)
+</table>
+
+![](../.gitbook/assets/image%20%28139%29.png)
 
 ## 回执消息
 
@@ -941,3 +947,4 @@ The property values of the `summary` object should be valid, well-formatted deci
     </tr>
   </tbody>
 </table>
+

@@ -10,7 +10,7 @@ description: 在这一章节，教你怎样使用比EDM还要有效的功能，�
 
 ![&#x5E7F;&#x64AD;&#x7FA4;&#x53D1;&#x5217;&#x8868;](../.gitbook/assets/guang-bo-qun-fa-lie-biao.png)
 
-![&#x5E7F;&#x64AD;&#x4EFB;&#x52A1;&#x5217;&#x8868;](../.gitbook/assets/image%20%28130%29.png)
+![&#x5E7F;&#x64AD;&#x4EFB;&#x52A1;&#x5217;&#x8868;](../.gitbook/assets/image%20%28129%29.png)
 
 进入广播群发页面，首先会看到任务列表页，展示所有已创建的群发任务。点击右上角「新建群发」，即可创建一条新的群发任务，群发任务包含任务名称、任务类型、发送时间、发送对象及发送内容。发送时间分为两种类型：定期发送和定时发送。定时发送属于一次性发送任务，定期任务可实现定期循环发送。用户可根据实际业务需求来选择定时发送或定期发送。
 
@@ -44,7 +44,7 @@ JoinChat提供设置多时区，为服务不同国家的机器人选择最合适
 
 ![&#x56FA;&#x5B9A;&#x65F6;&#x533A;&#x5217;&#x8868;](../.gitbook/assets/guang-bo-ren-wu-gu-ding-shi-qu-lie-biao-1.png)
 
-![](../.gitbook/assets/image%20%28122%29.png)
+![](../.gitbook/assets/image%20%28121%29.png)
 
 {% hint style="danger" %}
 根据Facebook推广政策，推送带有营销内容的消息必须勾选“营销类消息”，作为非营销类消息群发会面临被Facebook警告甚至封号的风险。
