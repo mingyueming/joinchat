@@ -32,7 +32,7 @@ description: >-
 
 随机器可根据分支设置的百分值来触发分支关联的回复内容，创建随机器时时可选择已有随机器或新建随机器。
 
-![&#x793A;&#x4F8B;](../.gitbook/assets/image%20%28182%29.png)
+![&#x793A;&#x4F8B;](../.gitbook/assets/image%20%28183%29.png)
 
 ## 贴文分享按钮
 
@@ -40,7 +40,7 @@ description: >-
 
 当用户收到带有分享贴文按钮的消息使，点击对应的按钮，即可让用户将预设的贴文分享至自己的facebook中达到活动或消息的转播。
 
-![&#x793A;&#x4F8B;](../.gitbook/assets/image%20%28184%29.png)
+![&#x793A;&#x4F8B;](../.gitbook/assets/image%20%28186%29.png)
 
 ## 电话按钮
 
