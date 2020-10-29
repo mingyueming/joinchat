@@ -8,9 +8,9 @@ description: 一种全新的获客方式
 
 同时，也可以将facebook直播评论转化为销售消息，通过直播过程中主播口播关键词，给评论互动的用户自动推送商品购买链接，并使用第三方销售平台如shopify来实现商品付款：
 
-![&#x76F4;&#x64AD;&#x8BC4;&#x8BBA;](../.gitbook/assets/image%20%28193%29.png)
+![&#x76F4;&#x64AD;&#x8BC4;&#x8BBA;](../.gitbook/assets/image%20%28194%29.png)
 
-![&#x8BBE;&#x7F6E;&#x76F4;&#x64AD;&#x5173;&#x952E;&#x8BCD;](../.gitbook/assets/image%20%28200%29.png)
+![&#x8BBE;&#x7F6E;&#x76F4;&#x64AD;&#x5173;&#x952E;&#x8BCD;](../.gitbook/assets/image%20%28202%29.png)
 
 与关键词回复设置类似，设置关键词，并指定关键词推送的消息，后台帮助您记录关键词触发的数据，方便您在直播结束后了解互动数据，查看销售转化最佳的商品或互动。
 

@@ -8,6 +8,8 @@ description: 通过广告、网站、邮件通信或线下媒体等轻松开始�
 
 {% page-ref page="tui-guang-cha-jian.md" %}
 
+{% page-ref page="zhi-bo-ping-lun.md" %}
+
 {% page-ref page="guang-gao-tui-song.md" %}
 
 {% page-ref page="guang-bo-qun-fa.md" %}
