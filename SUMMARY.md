@@ -19,6 +19,7 @@
   * [人工客服](general-function/ren-gong-ke-fu.md)
 * [智能营销](zhi-neng-ying-xiao/README.md)
   * [营销活动](zhi-neng-ying-xiao/tui-guang-cha-jian.md)
+  * [直播评论](zhi-neng-ying-xiao/zhi-bo-ping-lun.md)
   * [广告推送](zhi-neng-ying-xiao/guang-gao-tui-song.md)
   * [广播群发](zhi-neng-ying-xiao/guang-bo-qun-fa.md)
 * [应用市场](ying-yong-shi-chang.md)
