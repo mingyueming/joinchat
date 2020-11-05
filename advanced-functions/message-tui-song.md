@@ -1,8 +1,8 @@
 ---
-description: '开发人员可以调用Joinchat发送消息api, 向messenger用户发送消息, 是客户自助解决问题的高效方案.'
+description: '开发人员可以调用Joinchat发送消息API, 向messenger用户发送消息, 是客户自助解决问题的高效方案'
 ---
 
-# 消息推送
+# 消息推送API
 
 ## 请求URL
 

@@ -8,11 +8,11 @@ description: 给你的用户贴上术语他的形象定位
 
 点击「+标签」可以为该用户选择已有的标签，或输入一个新标签的名称，按下回车即完成新标签的创建。
 
-![&#x793A;&#x4F8B;](../.gitbook/assets/image%20%28192%29.png)
+![&#x793A;&#x4F8B;](../.gitbook/assets/image%20%28193%29.png)
 
 全局标签管理
 
-![&#x6807;&#x7B7E;&#x5217;&#x8868;](../.gitbook/assets/image%20%28216%29.png)
+![&#x6807;&#x7B7E;&#x5217;&#x8868;](../.gitbook/assets/image%20%28223%29.png)
 
 JoinChat在标签在管理中主要引入了两种标签概念：事件偏好标签和自定义标签
 

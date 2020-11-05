@@ -10,9 +10,9 @@ description: 用户群可用于用户分层，做为精细化运营基础
 
 
 
-![&#x7FA4;&#x7EC4;&#x521B;&#x5EFA;](../.gitbook/assets/image%20%28201%29.png)
+![&#x7FA4;&#x7EC4;&#x521B;&#x5EFA;](../.gitbook/assets/image%20%28205%29.png)
 
 完成创建用户群体后，在列表中会看到符合该条件的群组情况，以及群成员。
 
-![&#x7FA4;&#x5217;&#x8868;](../.gitbook/assets/image%20%28202%29.png)
+![&#x7FA4;&#x5217;&#x8868;](../.gitbook/assets/image%20%28206%29.png)
 

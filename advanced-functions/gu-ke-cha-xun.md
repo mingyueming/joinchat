@@ -1,4 +1,8 @@
-# 电商API对接
+---
+description: 开发人员可以调用JoinChat的电商API，实现符合电商场景的垂直功能
+---
+
+# 电商API
 
 ##  介绍
 
