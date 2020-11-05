@@ -31,7 +31,7 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 
 使用场景：如，当用户点击查看某一件商品更多的介绍内容时，希望给用户打上一个“对X商品感兴趣“的标签。
 
-管理全部标签则在[用户管理](../she-zhi/yong-hu.md)中进行。
+管理全部标签则在[用户管理](../us-e-r/yong-hu.md)中进行。
 
 ### 设置用户属性和清除用户属性
 
@@ -46,7 +46,7 @@ Messenger支持在使用卡片过程中可以与用户进行交互，如文本�
 | 日期类型 | 如生日 |
 | 时间类型 | 如用餐时间 |
 
-管理全部属性则在[用户管理](../she-zhi/yong-hu.md)中进行。
+管理全部属性则在[用户管理](../us-e-r/yong-hu.md)中进行。
 
 ### 呼叫人工客服
 
@@ -100,7 +100,7 @@ JoinChat内置了谷歌翻译功能，可以通过识别用户facebook设置的�
 
 ![&#x6D88;&#x606F;&#x6D41;](../.gitbook/assets/image%20%28171%29.png)
 
-我们在创建[固定菜单](../general-function/gu-ding-cai-dan.md)中的每一个按钮、[欢迎回复](../she-zhi/ji-chu-she-zhi/huan-ying-hui-fu.md)、[默认回复](../she-zhi/ji-chu-she-zhi/wei-zhi-hui-fu.md)、每一条[关键词回复](../general-function/ai-hui-fu.md)都视为一个独立的消息流。为了便于内容的区分及管理，可以在[对话场景](../general-function/xiao-xi-guan-li.md)中创建一个新的消息流，同时进行消息流的管理。
+我们在创建[固定菜单](../general-function/gu-ding-cai-dan.md)中的每一个按钮、[欢迎回复]()、[默认回复]()、每一条[关键词回复](../general-function/ai-hui-fu.md)都视为一个独立的消息流。为了便于内容的区分及管理，可以在[对话场景](../general-function/xiao-xi-guan-li.md)中创建一个新的消息流，同时进行消息流的管理。
 
 
 

@@ -165,5 +165,5 @@ Messenger 平台支持发送可水平滚动的常规模板轮播。
 
 该功能目前处于测试阶段，后续我们会开放模板功能，让大家可以自定义创建模板及玩法的组合创新。
 
-[如何创建图文消息？](../she-zhi/nei-rong-guan-li/tu-wen-guan-li-1.md#chuang-jian-tu-wen-nei-rong)
+[如何创建图文消息？](../nei-rong-guan-li/tu-wen-guan-li-1.md#chuang-jian-tu-wen-nei-rong)
 

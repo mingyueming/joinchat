@@ -47,7 +47,7 @@ description: >-
 
 ![&#x6761;&#x4EF6;&#x7B5B;&#x9009;](../.gitbook/assets/image%20%2822%29.png)
 
-想要查看全局设置的属性和标签，则可以通过设置-[属性/标签](ji-chu-she-zhi/shu-xing-biao-qian.md)管理，统一对标签和属性进行管理。
+想要查看全局设置的属性和标签，则可以通过设置-[属性/标签](shu-xing-biao-qian.md)管理，统一对标签和属性进行管理。
 
 ## 用户群
 
