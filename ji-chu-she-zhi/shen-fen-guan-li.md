@@ -12,7 +12,7 @@ JoinChat平台上，一个主页的messenger管理功能只能绑定一个机器
 
 JoinChat需要输入拟邀请用户的facebook 注册邮箱，且该Facebook账号需要登陆过JoinChat。邀请成功后好友即可与您共同管理这个机器人账号了。
 
-![&#x9080;&#x8BF7;&#x754C;&#x9762;](../.gitbook/assets/image%20%28229%29.png)
+![&#x9080;&#x8BF7;&#x754C;&#x9762;](../.gitbook/assets/image%20%28230%29.png)
 
 ## 接受邀请
 

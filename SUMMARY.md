@@ -26,6 +26,7 @@
   * [BoomCart](ying-yong-shi-chang/ying-yong-shi-chang-1.md)
   * [Travel Master](ying-yong-shi-chang/travel-master.md)
   * [JoinChat Expo](ying-yong-shi-chang/wo-de-ying-yong.md)
+  * [对话模板](ying-yong-shi-chang/dui-hua-mo-ban.md)
 * [内容管理](nei-rong-guan-li/README.md)
   * [图文管理](nei-rong-guan-li/tu-wen-guan-li-1.md)
   * [图片管理](nei-rong-guan-li/tu-pian-guan-li.md)

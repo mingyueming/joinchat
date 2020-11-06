@@ -32,7 +32,7 @@ description: BoomCart应用为Shopify提供了多种自动化活动组件，支�
 
 ··· ···
 
-![](../.gitbook/assets/image%20%28223%29.png)
+![](../.gitbook/assets/image%20%28224%29.png)
 
 **实现Messenger生态内的营销服务能力**
 

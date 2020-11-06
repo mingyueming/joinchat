@@ -12,7 +12,7 @@ description: 给你的用户贴上术语他的形象定位
 
 全局标签管理
 
-![&#x6807;&#x7B7E;&#x5217;&#x8868;](../.gitbook/assets/image%20%28233%29.png)
+![&#x6807;&#x7B7E;&#x5217;&#x8868;](../.gitbook/assets/image%20%28234%29.png)
 
 JoinChat在标签在管理中主要引入了两种标签概念：事件偏好标签和自定义标签
 
