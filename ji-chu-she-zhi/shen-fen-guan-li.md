@@ -12,13 +12,13 @@ JoinChat平台上，一个主页的messenger管理功能只能绑定一个机器
 
 JoinChat需要输入拟邀请用户的facebook 注册邮箱，且该Facebook账号需要登陆过JoinChat。邀请成功后好友即可与您共同管理这个机器人账号了。
 
-![&#x9080;&#x8BF7;&#x754C;&#x9762;](../.gitbook/assets/image%20%28219%29.png)
+![&#x9080;&#x8BF7;&#x754C;&#x9762;](../.gitbook/assets/image%20%28229%29.png)
 
 ## 接受邀请
 
 接受邀请共同管理Messenger机器人。受邀人通过邀请邮件来确认并成功加入机器人进行管理。
 
-![&#x9080;&#x8BF7;&#x90AE;&#x4EF6;](../.gitbook/assets/image%20%28195%29.png)
+![&#x9080;&#x8BF7;&#x90AE;&#x4EF6;](../.gitbook/assets/image%20%28199%29.png)
 
 一旦用户接受邀请，在Messenger机器人列表“我管理的机器人“中，就会看到机器人入口。
 

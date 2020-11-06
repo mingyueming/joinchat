@@ -8,7 +8,5 @@ description: JoinChat作为应用服务平台，提供大量优质的垂直行�
 
 {% page-ref page="ying-yong-shi-chang-1.md" %}
 
-{% page-ref page="wo-de-ying-yong.md" %}
-
 
 
